@@ -1,0 +1,36 @@
+{
+  "praetors": {
+    "abraxas": {
+      "name": "Abraxas",
+      "description": "Abraxas is a crowd favorite in the 'Infernal Arena of Pandemonium'. Despite the many honors that he has won for those who would command his service, the patron soon finds that a sense of unease regarding Abraxas slowly creeps into being. He knows something. You know from merely looking at him that he knows something that you do not. It grates. – From 'A History of The Infernal Arena' vol. ii",
+      "loyalty": "3",
+      "level": "1",
+      "hp": "9",
+      "attack" : "7",
+      "defense" : "7",
+      "infernal" : "3",
+      "luck" : "3",
+      "specials" :
+      {
+        "melee": "+3",
+        "level roll": "+3"
+      },
+      "cost" :
+      {
+        "prestige": "0",
+        "souls": "1",
+        "ichor": "1",
+        "hellfire": "0",
+        "darkness": "0"
+      },
+      "upkeep" :
+      {
+        "prestige": "0",
+        "souls": "0",
+        "ichor": "0",
+        "hellfire": "0",
+        "darkness": "0"
+      }
+    }
+  }
+}
