@@ -3,6 +3,7 @@ from discord.ext import commands
 import json, os
 import configparser
 
+# Set some useful directories
 si_dir = os.path.dirname(os.path.realpath(__file__))
 base_dir = os.path.join(si_dir, '..')
 sipedia_dir = os.path.join(base_dir, 'sipedia/')
@@ -10,8 +11,9 @@ sipedia_dir = os.path.join(base_dir, 'sipedia/')
 
 config = configparser.ConfigParser()
 # Read the config file
+config_file = base_dir + "/config.cfg"
 try:
-    config.read_file(open('config.cfg'))
+    config.read_file(open(config_file))
 except FileNotFoundError as e:
     print("Failed to open config file.")
     raise
@@ -82,25 +84,25 @@ class Praetors:
                 if item.lower() == 'special abilities':
                     praetor_specials = self.get_praetor_specials()
                     praetor_specials = sorted(praetor_specials)
-                    embed_description = self.info[item] + "\n\nPraetors have the following special abilities: **" + "**, **".join(praetor_specials) + "**"
+                    embed_description = self.info[item.lower()] + "\n\nPraetors have the following special abilities: **" + "**, **".join(praetor_specials) + "**"
                     embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
                     embed.set_author(name=item.title())
                     await ctx.send(embed=embed)
                     await ctx.send("You may use the `praetor hasspecial <special>` command to list Praetors that have that special ability.")
                 elif item.lower() == 'single combat':
-                    embed_description = self.info[item]
+                    embed_description = self.info[item.lower()]
                     embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
                     embed.set_author(name=item.title())
                     await ctx.send(embed=embed)
                     await ctx.send("You may use the `praetor info [basic|exotic] combat moves` command to learn more about combat moves.")
                 elif item.lower() == "basic combat moves":
-                    embed_description = self.info[item]['description']
+                    embed_description = self.info[item.lower()]['description']
                     embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
                     embed.set_author(name=item.title())
                     await ctx.send(embed=embed)
                     await ctx.send("You may use the `praetor info <basic combat move>` command to get information about a specific combat move.")
                 elif item.lower() == "exotic combat moves":
-                    embed_description = self.info[item]['description']
+                    embed_description = self.info[item.lower()]['description']
                     exotic_combat_moves = []
                     for exotic in self.info['exotic combat moves'].keys():
                         if exotic != 'description':
@@ -110,24 +112,24 @@ class Praetors:
                     await ctx.send(embed=embed)
                     await ctx.send("You may use the `praetor info <exotic combat move>` command to get information about a specific combat move.")                
                 else:
-                    embed_description = self.info[item]
+                    embed_description = self.info[item.lower()]
                     embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
                     embed.set_author(name=item.title())
                     await ctx.send(embed=embed)
             elif item.lower() in self.info['basic combat moves'].keys():
-                embed_description = self.info['basic combat moves'][item]
+                embed_description = self.info['basic combat moves'][item.lower()]
                 embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
                 embed.set_author(name=item.title())
                 await ctx.send(embed=embed)
             elif item.lower() in self.info['exotic combat moves'].keys():
-                embed_description = self.info['exotic combat moves'][item]
+                embed_description = self.info['exotic combat moves'][item.lower()]
                 embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
                 embed.set_author(name=item.title())
                 await ctx.send(embed=embed)
             elif item.lower() == ctx.message.author.name.lower():
                 await ctx.send(f"{ctx.message.author.mention}, the legions of hell would not consider you worthy enough to lead them into battle.")
             else:
-                await ctx.send(f"'{item}' is not a valid command or Praetor name.")
+                await ctx.send(f"'{item}' is not a valid Praetor name or item.")
         elif subcommand.lower() == 'hasspecial':
             praetor_specials = self.get_praetor_specials()
             if item is None:
