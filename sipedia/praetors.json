@@ -25,7 +25,14 @@
       "impenetrable stance": "6 Shields\nBlock two points of damage for every Shield that you assign (This includes the same phase that Impenetrable Stance is used. It lasts for the rest of the round).",
       "lava orb": "4 Orbs\nDo 2d6 points of damage to opponent.",
       "mind burn": "4 Orbs\nDo 1d6 damage to opponent. If your Praetor’s Infernal power is greater than your opponent’s Infernal power, do an additional 1d6.",
-      "": ""
+      "oath of retribution": "2 Orbs\nIf the opposing Praetor’s combat move inflicts damage, the opposing Praetor receives triple the damage inflicted; you receive none.\nAny defenses your praetor has will be applied before tripling the damage (so luck will reduce melee damage). After tripling, the damage will be applied back as direct damage so the opposing praetor's luck will not have an effect.",
+      "obsidian skin": "3 Orbs\nBlock 2d6 points of damage for the remaining combat phases in this round. (This includes the same phase that Obsidian Skin is used.)",
+      "piercing lunge": "1-7 Skulls\nIn addition to normal combat damage, do 1d6 in damage to opponent if your assigned Skulls exceed your opponent’s assigned Skulls. You must do combat damage for the bonus to trigger.",
+      "sinew slice": "1-7 Skulls\nIn addition to combat damage, do 1d6 in damage for every two assigned Skulls in your opponent’s current combat phase. You must do combat damage for the bonus to trigger.",
+      "rain of brimstone": "6 Orbs\nDo 3d6 points of damage to opponent.",
+      "tentacle rupture": "4 Orbs\nDo three points of damage to opponent for each combat move you have already performed.",
+      "veil of smoke": "3 Orbs\nBlock 1d6 + 1 per Praetor level of damage from opponent during the remaining combat phases in this round. (This includes the same phase that Veil of Smoke is used.)",
+      "vile oath of consumption": "6 Orbs\nDo 1d4 points of damage to opponent for every level of your Infernal power."
     }
   },
   "praetors": {

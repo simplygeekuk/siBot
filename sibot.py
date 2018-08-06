@@ -5,10 +5,14 @@ import json
 import sys, traceback, os
 import configparser
 
+# Set some useful directories
+base_dir = os.path.dirname(os.path.realpath(__file__))
+
 config = configparser.ConfigParser()
 # Read the config file
+config_file = base_dir + "/config.cfg"
 try:
-    config.read_file(open('config.cfg'))
+    config.read_file(open(config_file))
 except FileNotFoundError as e:
     print("Failed to open config file.")
     raise
