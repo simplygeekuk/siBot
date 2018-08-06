@@ -136,7 +136,8 @@ class Praetors:
                 await ctx.send("You must specify the special ability to search for Praetors.")
             elif item.title() in praetor_specials:
                 praetors_with_special = self.get_praetors_with_special(item.lower())
-                await ctx.send("The following Praetors were found with the special ability **" + item.title() + "**: " + ", ".join(praetors_with_special))
+                await ctx.send("The following Praetors were found with the special ability **" + item.title() + "**: " + ", ".join(praetors_with_special) + 
+                "\nYou may use the `praetor info <name>` command to get information about a specific praetor.")
             else:
                 await ctx.send(f"No Praetors have the special ability: **{item}**")
 
