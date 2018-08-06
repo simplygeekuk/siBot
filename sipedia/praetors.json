@@ -131,6 +131,181 @@
         "melee": "+4",
         "level roll": "+3"
       }
+    },
+    "decarabia": {
+      "name": "Decarabia",
+      "description": "The Fulminatas moved forward in perfect formation following closely behind the mighty Decarabia. The Walls of Nasgulrawata were breached with ease by his great horn. Walls that had withstood the siege of a millennium crumbled with a sickening groan. The damned within were roasted and consumed in the following revel that lasted for years. – From 'An Examination of Siege Tactics in the Infernal Pit' vol. xii",
+      "img": "Decarabia",
+      "loyalty": "3",
+      "level": "4",
+      "hp": "9",
+      "attack": "9",
+      "defense": "7",
+      "infernal": "3",
+      "luck": "2",
+      "specials": {
+        "ranged": "+3",
+        "ranged twice": ""
+      }
+    },
+    "eligos": {
+      "name": "Eligos",
+      "description": "I have received thirty-four letters from Bezel since we last spoke. He seems greatly concerned with a prophesied uprising amongst demons within the gates of Pandemonium. And he, of course, is fishing for related prophecies that I may hold. Of most concern to me is his lack of explanation for these images. He speaks reservedly and he seems to hold many secrets close to his chest. I will deploy eyes and ears to unfold these intentions. --A letter found outside Beelzebub’s chamber, signed by Great Duke Eligos but without an addressee",
+      "img": "Eligos",
+      "loyalty": "4",
+      "level": "3",
+      "hp": "9",
+      "attack": "4",
+      "defense": "7",
+      "infernal": "5",
+      "luck": "2",
+      "specials": {
+        "ranged": "+5"
+      }
+    },
+    "focalor": {
+      "name": "Focalor",
+      "description": "I found this letter two days ago. It reads: 'Focalor has never fully recovered from the first millennium after his spiritual eviction. He lacks his previous power to ruin those tiny little ships that mankind built off their lust for new lands. He is weathered, and I think it best to handle him through quick and fierce justice. Be a woman of the twilight. Lure him into seclusion so I may strike him down and join you as a greater demon.' It was written in the hand of my suffragan. --From the diary of Bishop Bezel",
+      "img": "Focalor",
+      "loyalty": "3",
+      "level": "3",
+      "hp": "13",
+      "attack": "8",
+      "defense": "6",
+      "infernal": "0",
+      "luck": "3",
+      "specials": {
+        "ranged": "+2",
+        "melee": "+3"
+      }
+    },
+    "furfur": {
+      "name": "Furfur",
+      "description": "What we lack in Lucifer’s Choir is a comprehensive understanding of love and its effects on human subjects. Manipulation through deception, our marquee weapon in corrupting the Image, requires the deconstruction and examination of our subject across all plains: physical, spiritual, mental, emotional. I write for Furfur’s admittance into the Choir based on his works with human emotions and sexual gratification. No more shall war, famine, and disease be our main weapons in redirecting humans away from their creator. Other, more fruit-bearing routes allow equal travel. --Private letter from Bishop Bezel to the Choir",
+      "img": "Furfur",
+      "loyalty": "3",
+      "level": "2",
+      "hp": "11",
+      "attack": "9",
+      "defense": "6",
+      "infernal": "3",
+      "luck": "2",
+      "specials": {
+        "melee": "+3",
+        "infernal": "+2"
+      }
+    },
+    "haagenti": {
+      "name": "Haagenti",
+      "description": "I see a figure with a bullish head and feathered wings who walks because his body's thickness belies flight. He is sooty. He drinks his poison with a steady hand, which says much because his body appears weathered and carries the cuts of a hundred-thousand years. I see this figure standing atop a golden chair that sits at the peak of a bronze pyramid. I see him tossing arms, legs, and a head or two from the top: parts of those who stood in his path. --Vision of Bishop Bezel",
+      "img": "Haagenti",
+      "loyalty": "2",
+      "level": "3",
+      "hp": "14",
+      "attack": "13",
+      "defense": "7",
+      "infernal": "0",
+      "luck": "2",
+      "specials": {
+        "melee": "+5"
+      }
+    },
+    "malacoda": {
+      "name": "Malacoda",
+      "description": "It’s quite simple actually: Fly up to the rock, pluck a soul from the bounty, drop it to the pit. They make a delightful sound when they splash and most never surface for breath. A few do, however, and I dispatch someone to handle them accordingly. Yes, it’s redundant, but I find ways to keep morale. Occasionally we play with them in the air over the pit. Simple fun, really. A small game of catch. Nothing to curb effectiveness. --From an informal report written by the hand of Malacoda, submitted to his superior, Principa",
+      "img": "Malacoda",
+      "loyalty": "3",
+      "level": "3",
+      "hp": "8",
+      "attack": "7",
+      "defense": "4",
+      "infernal": "6",
+      "luck": "2",
+      "specials": {
+        "melee": "+2",
+        "infernal": "+4"
+      }
+    },
+    "morax": {
+      "name": "Morax",
+      "description": "Morax has 'befriended' many a mortal and in the process wrought torment laced with delicious irony. One of his favorite gags is to grant the tormented a cursed immortality that sends the victim on an endless quest to find their true identity while hounded by recurring amnesia. – From 'The Nature of Man' vol. x",
+      "img": "Morax",
+      "loyalty": "1",
+      "level": "4",
+      "hp": "8",
+      "attack": "0",
+      "defense": "7",
+      "infernal": "12",
+      "luck": "2",
+      "specials": {
+        "infernal": "+2",
+        "infernal twice": ""
+      }
+    },
+    "mulciber": {
+      "name": "Mulciber",
+      "description": "It was Haruspex Pilanza who selected the site for Pandemonium, however Mulciber lead its construction. Pandemonium was built from stone, iron, and unrefined sins collected from the time of Adam and Eve until the death of their great-grandchildren. Mulciber crafted Pandemonium’s design and saw to its completion through his establishment of the Order of Infernal Engineers, an organization that would later make several technological advances for life in our world. Mulciber’s chief subordinate engineer was Pontis. Pontis would later design and construct The Testament of Tyrants. --Encyclopedia Infernal",
+      "img": "Mulciber",
+      "loyalty": "4",
+      "level": "2",
+      "hp": "11",
+      "attack": "8",
+      "defense": "9",
+      "infernal": "0",
+      "luck": "1",
+      "specials": {
+        "melee": "+3",
+        "collector of artifacts": ""
+      }
+    },
+    "naphula": {
+      "name": "Naphula",
+      "description": "Naphula harbors resentments of a spurious nature regarding her recent demotion. It has been explained ad nauseum that research in the philosophical arts concerning the nature of predestiny and the symbiotic relationship between good and evil are not productive given our present plight – and yet she persists. --Private letter from Vulgati the Wise to Infernal Professorium",
+      "img": "Naphula",
+      "loyalty": "2",
+      "level": "4",
+      "hp": "10",
+      "attack": "6",
+      "defense": "8",
+      "infernal": "6",
+      "luck": "1",
+      "specials": {
+        "infernal": "+2",
+        "level roll": "+3",
+        "Block Combat Cards": ""
+      }
+    },
+    "orias": {
+      "name": "Orias",
+      "description": "Orias desires to build a string of watchtowers on the lip of a chasm that divides the Great Empty. He claims that another house might summon some strength from its boundless depths. I suspect some other veiled motive but can not offer as yet any evidence that he is anything other than a useless soul glutton. --Private letter from House Master Oculus to Asmodeus",
+      "img": "Orias",
+      "loyalty": "3",
+      "level": "4",
+      "hp": "12",
+      "attack": "10",
+      "defense": "7",
+      "infernal": "0",
+      "luck": "2",
+      "specials": {
+        "melee": "+2",
+        "melee twice": ""
+      }
+    },
+    "phenex": {
+      "name": "Phenex",
+      "description": "He takes the form of a fiery bird and he wields the voice of a choir boy. Give him no ear, for his songs mislead. But bid him take the form of a man, and he will show you his truer image. From that image he offers no harm and he provides you with knowledge in poetics and ocular sciences. Take his words to heart in this latter form: he is the least misleading of Hell’s gentlefolk. --From 'The Pseudomonarchia Daemonum'",
+      "img": "Phenex",
+      "loyalty": "3",
+      "level": "2",
+      "hp": "10",
+      "attack": "3",
+      "defense": "4",
+      "infernal": "3",
+      "luck": "2",
+      "specials": {
+        "ranged": "+3",
+        "melee": "+3"
+      }
     }
   }
 }
