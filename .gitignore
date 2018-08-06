@@ -1,5 +1,15 @@
-## old bot code
+# old bot code
 sibot_old.py
 
 # ignore config file
 config.cfg
+
+# Cache directories
+__pycache__
+
+# ignore extensions
+*.pyc
+*.log
+*.class
+*.lock
+*.tmp
