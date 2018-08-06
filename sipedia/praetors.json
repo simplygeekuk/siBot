@@ -1,35 +1,128 @@
 {
+  "description": "Praetors are heroes of Hell, used by astute leaders to coerce or otherwise lead Legions and garrisons into battle. Like Legions, Praetors may be auctioned through the Infernal Bazaar. They never exist as a separate unit on the map; they are either attached to a unit or reside in the player’s vault (i.e., Stronghold).",
+  "info": {
+    "special abilities": " Some Praetors have special abilities that grant bonuses to the Legion or Place of Power to which they are attached. Other special abilities are used in Single Combat, when two Praetors duel each other to extend the influence of their Archfiend.",
+    "level up": "When a Praetor levels up after victory in Single Combat, its owner is sent a message in the turn log. The owner must click the response button and select the upgrade to continue. Upgrades are randomly determined, and they consist of increases in Single Combat attributes such as Skulls, Shields, Orbs, or Hit Points. The bonus is applied at the beginning of the processing of the following turn.",
+    "training": "Some rare Manuscripts (those found through Tribute or bought in the Infernal Bazaar) allow Praetors to upgrade their attributes, which is done by issuing an order through the Ministerium Interface. The Manuscript is used like a regular Tribute Card, and the training upgrade is applied at the beginning of the processing of the following turn.",
+    "limitations": "Praetors may be attached to both Legions and Places of Power, though no more than one Praetor per unit. A Praetor not attached to a Legion or Place of Power is considered to be in the player’s vault. Praetors attached to a defeated unit are vanquished to the Abyss (i.e., Tartarus) for eternity.",
+    "luck": "All Praetors have a Luck attribute, which is a single digit number used for a Luck Roll. A Luck Roll is a random number between zero and the Luck attribute. (For example, a Luck of 2 can generate a random number between 0 and 2.) Luck Rolls are added to any combat moves based on Skulls or Shields. Combat moves based on Orbs do direct damage and are not affected by Luck.",
+    "single combat": "Single Combat occurs whenever two Praetors meet to defend their Archfiend’s honor in the Infernal Arena of Pandemonium. The impetus can be the resolution of a Vendetta, a challenge against Pandemonium’s reining Champion, or a Grand Tournament sponsored by the Infernal Conclave.\n\n**General Concept**: In addition to level and hit points, all Praetors have three combat attributes: Attack (Skulls), Defense (Shields), and Infernal (Orbs). Praetors may also gain special combat moves through Manuscripts, which may augment the basic combat moves. Combat moves are increased by Skulls, Shields, and Orbs so they may more effectively damage or shield damage from a corresponding attack. Each Praetor has six numbered Combat Slots to be filled by combat moves.\nSingle combat between praetors is not limited to 2 rounds like legions. Single combat lasts until someone is eliminated. In the rare case where neither side is able to inflict damage upon the other, both praetors are eliminated.\n\nYou may use the `praetor info [basic|exotic] combat moves` command to learn more about combat moves.",
+    "basic combat moves": {
+      "description": "All Praetors have access to four basic combat moves. Combat moves are assigned through an in-game menu, where Skulls, Shields, and Orbs may be allotted to these moves. The four basic moves are: **Melee Attack**, **Melee Defense**, **Guarded Attack**, and **Infernal Burst**.",
+      "melee attack": "This move may be augmented by one to five Skulls. When compared to the opponent’s move in their corresponding Combat Slot, this move may do hit point damage against the opponent. The hit point damage is equal to the number of allotted Skulls plus a random roll of the attacking Praetor’s Luck subtracted by the sum of the defender’s allotted Shields and a random roll of the defending Praetor’s Luck. In other words:\n\n**Damage** = (Number of Skulls by attacker + attacking Praetor’s Luck Roll) - (number of Shields by defender + defending Praetor’s Luck Roll)",
+      "melee defense": "This move may be augmented by one to five Shields. When compared to the opponent’s move in their corresponding Combat Slot, this move may block hit point damage against your Praetor. The blocked hit point damage is equal to the number of allotted Shields plus a random roll of your Praetor’s Luck.",
+      "guarded attack": "This move may be augmented by one to four Skulls as well as one to four Shields. It is a hybrid move that acts just like a Melee Attack and Melee Defense.",
+      "infernal burst": "This move must be allotted three Orbs for execution. It does 1d6 damage directly to your opponent’s hit points. No Luck can mitigate this damage, however some exotic combat moves can block or absorb the damage from Infernal Bursts."
+    },
+    "exotic combat moves": {
+      "description": "Praetors can learn other, more powerful combat moves by training with Manuscripts. Some Manuscripts require a single piece for training, although, the more powerful moves require you to collect two or three matching pieces for their completion. Exotic combat moves follow the same rules with Skulls, Shields, and Orbs as do their basic move counterparts, although special bonuses may apply bonus damage or grant special advantages during that combat round.",
+      "bleeding wound": "1-5 Skulls\nIn addition to combat damage, do 1 additional point of damage to your opponent in every following combat move phase until the beginning of the next round if your assigned skulls exceeds your opponent's assigned shields.",
+      "blood boil": "5 Orbs\nDo 1d6 damage to opponent. Do an additional point of damage for each level of your Praetor.",
+      "bone breaker": "6 Skulls\nIn addition to combat damage, do one additional point of damage to your opponent for each Shield he assigned during both his current combat phase and its preceding phase. You must do combat damage for the bonus to trigger.",
+      "crippling strike": "1 Skull\nIf your Praetor’s level exceeds your opponent’s assigned Shields for the phase in which Crippling Strike is used, remove 1d6 + 1 per Praetor level of assigned Skulls from your opponent’s combat moves in all subsequent phases for the rest of the round.",
+      "demonic trance": "6 Orbs\nThere is a 20% chance plus 5% per level of your Praetor that this combat move will negate each subsequent combat move of the opposing Praetor for the remaining combat phases in this round.\nThe negation test is done for each of your opponents moves, not for the whole round. Typically you'll negate some, but not all of the opponents moves each round.",
+      "impale": "1-4 Skulls, 1-6 Shields\nIn addition to normal combat damage, do one additional point of damage to your opponent for each assigned Shield that exceeds your opponent’s assigned Skulls in the same combat move phase. You must do combat damage for the bonus to trigger.",
+      "impenetrable stance": "6 Shields\nBlock two points of damage for every Shield that you assign (This includes the same phase that Impenetrable Stance is used. It lasts for the rest of the round).",
+      "lava orb": "4 Orbs\nDo 2d6 points of damage to opponent.",
+      "mind burn": "4 Orbs\nDo 1d6 damage to opponent. If your Praetor’s Infernal power is greater than your opponent’s Infernal power, do an additional 1d6.",
+      "": ""
+    }
+  },
   "praetors": {
     "abraxas": {
       "name": "Abraxas",
       "description": "Abraxas is a crowd favorite in the 'Infernal Arena of Pandemonium'. Despite the many honors that he has won for those who would command his service, the patron soon finds that a sense of unease regarding Abraxas slowly creeps into being. He knows something. You know from merely looking at him that he knows something that you do not. It grates. – From 'A History of The Infernal Arena' vol. ii",
+      "img": "Abraxas",
       "loyalty": "3",
       "level": "1",
       "hp": "9",
-      "attack" : "7",
-      "defense" : "7",
-      "infernal" : "3",
-      "luck" : "3",
-      "specials" :
-      {
+      "attack": "7",
+      "defense": "7",
+      "infernal": "3",
+      "luck": "3",
+      "specials": {
         "melee": "+3",
         "level roll": "+3"
-      },
-      "cost" :
-      {
-        "prestige": "0",
-        "souls": "1",
-        "ichor": "1",
-        "hellfire": "0",
-        "darkness": "0"
-      },
-      "upkeep" :
-      {
-        "prestige": "0",
-        "souls": "0",
-        "ichor": "0",
-        "hellfire": "0",
-        "darkness": "0"
+      }
+    },
+    "astarte": {
+      "name": "Astarte",
+      "description": "I still see her in the streets of Pandemonium. Three mornings ago she walked alone and looked over her shoulder at me in the window above. With time, I knew she would notice. I then saw her the following evening, but this time near the point where the five paths meet: the area where vagabonds sleep and the wicked come out to play. She had someone on her arm and she pulled close to his form. I was once one of those companions. I will leave it at that. --From the diary of Suffragan Pazul",
+      "img": "Astarte",
+      "loyalty": "3",
+      "level": "3",
+      "hp": "9",
+      "attack": "4",
+      "defense": "5",
+      "infernal": "6",
+      "luck": "2",
+      "specials": {
+        "infernal": "+4",
+        "loyalty": "+2"
+      }
+    },
+    "baraqiel": {
+      "name": "Baraqiel",
+      "description": "'He descended the heavens for coitus with mortals.' 'Have you seen their softer gender? I blame him not.' 'Nor I, moments of the flesh are reaped now; other things may never fruit. But at some point, dear Alfry, one must put aside transit things for the betterment of something larger.' 'Of what do you speak?' 'I speak of our unification and the spreading of discontent against our former father.' 'Is not Baraqiel’s exploit the betterment of our way?' 'I’m afraid not. One best undermines strong foes through organization. Baraqiel’s exploits are elementary indulgences.' --From 'A Treatise on Reformation, Presented in Dialogue'",
+      "img": "Baraqiel",
+      "loyalty": "3",
+      "level": "2",
+      "hp": "11",
+      "attack": "7",
+      "defense": "7",
+      "infernal": "7",
+      "luck": "2",
+      "specials": {
+        "melee": "+3",
+        "ranged": "+3"
+      }
+    },
+    "barbatos": {
+      "name": "Barbatos",
+      "description": "I do not harbor doubts about his loyalty. I merely note that he has possessed a seemingly preternatural ability to pick the winning side in any and all matters of political dispute. And this is quite contrary to his nature before our terrible fall from servitude in enlightened chains at the foot of the Tyrant’s Throne. It bears further rumination. --Private letter from Magistrate Traxagonis to the Black Ring",
+      "img": "Barbatos",
+      "loyalty": "2",
+      "level": "4",
+      "hp": "12",
+      "attack": "10",
+      "defense": "6",
+      "infernal": "0",
+      "luck": "1",
+      "specials": {
+        "melee": "+2",
+        "melee first": ""
+      }
+    },
+    "bifrons": {
+      "name": "Bifrons",
+      "description": "Bifrons. Male. Roughly seventy-eight years younger than Adam. Currently holds the title Earl. Seems to have a passing fascination with transmuting human corpses into various forms as well as transporting them to other, non-orthodox places such as a chair or in a human’s bedchambers. Is a student of alchemy and has written a philosophical work on applying sciences and arts towards the betterment of the Dark Prince. Seems to prefer the form of beast over his other public shape: a man. --Private notes by Archivist Epistemol for an uncompleted genealogical and political history of Hell",
+      "img": "Bifrons",
+      "loyalty": "2",
+      "level": "3",
+      "hp": "8",
+      "attack": "4",
+      "defense": "4",
+      "infernal": "3",
+      "luck": "1",
+      "specials": {
+        "ranged": "+4",
+        "level roll": "+2"
+      }
+    },
+    "bune": {
+      "name": "Bune",
+      "description": "It seems as if Bune sours over our arrangements. I have reason to believe he positions himself for the responsibilities that you and I share. What more does he expect? It is not that he lacks the manpower to accomplish such feat; he lacks the fortitude and spiritual constitution to rub horns with a member of the High Peerage. I fear nothing. To me, he is powdered bone. However, Bifrons, I suggest you watch your own. --Private letter from Murmur to Bifrons, transcribed by Murmur’s private scrivener, Lulas",
+      "img": "Bune",
+      "loyalty": "3",
+      "level": "3",
+      "hp": "8",
+      "attack": "4",
+      "defense": "7",
+      "infernal": "3",
+      "luck": "2",
+      "specials": {
+        "melee": "+4",
+        "level roll": "+3"
       }
     }
   }
