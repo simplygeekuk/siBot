@@ -163,7 +163,7 @@ class Praetors:
         specials = []
         self.embed = discord.Embed(colour=discord.Colour(0xd0021b), description=self.desc)
         self.embed.set_thumbnail(url=base_image_url + location + "/" + self.img + "." + image_format)
-        self.embed.set_author(name=self.name, url=si_wiki_url + self.name)
+        self.embed.set_author(name=self.name, url=si_wiki_url + self.name.replace(" ", "_"))
         self.embed.add_field(name="Level", value=self.level, inline=True)
         self.embed.add_field(name="Loyalty", value=self.loyalty, inline=True)
         self.embed.add_field(name="Hit Points", value=self.hp, inline=True)
