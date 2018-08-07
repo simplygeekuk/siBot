@@ -484,6 +484,66 @@
         "ranged": "+3",
         "infernal": "+3"
       }
+    },
+    "the butcher": {
+      "name": "The Butcher",
+      "description": "Bring me fresh meat! Bring me the meat! One can only marvel at his enthusiasm for dispatching the unworthy to Tartarean oblivion. Besides the aroma of freshly spilled Ichor, the smell of fear seeps from the floor of the Grand Arena as the Butcher plies his trade. Occasionally you hear a howl from the holding pens below but mostly the soft whimpering of those waiting for their turn with the Butcher. -- From 'An Account of Philotormentius at the Grand Arena' vol. i",
+      "img": "Butcher",
+      "loyalty": "3",
+      "level": "5",
+      "hp": "11",
+      "attack": "14",
+      "defense": "10",
+      "infernal": "0",
+      "luck": "3",
+      "specials": {
+        "Champion of Pandemonium": ""
+      }
+    },
+    "the queen of the damned": {
+      "name": "The Queen of the Damned",
+      "description": "She wields two blades that move with such rapidity that the eye can not discern one from the other. Nay only a shimmering haze is apparent before the pointed screech of pain is elicited from her opponent. She does not dispatch quickly preferring to bleed her antagonist slowly and seems to draw strength from the subtle agonizing decline in strength that follows each surgical cut. Doom by a thousand cuts has never been more real in the Grand Arena than when the Queen performs her ritual dance. - From 'An Account of Philotormentius at the Grand Arena' vol. ii",
+      "img": "QueenOfDamned",
+      "loyalty": "3",
+      "level": "6",
+      "hp": "9",
+      "attack": "16",
+      "defense": "7",
+      "infernal": "12",
+      "luck": "2",
+      "specials": {
+        "Champion of Pandemonium": ""
+      }
+    },
+    "the grey prince": {
+      "name": "The Grey Prince",
+      "description": "It was rumored that Lucifer before his disappearance was protected by a secret society of those Anointed of Ash. The reference escapes definition even after a thorough examination of primary resources in the Infernal Archives. The appearance of a so called “Grey” Prince in the Grand Arena has fueled more speculation along these lines. I have place agents in positions of importance and more information is expected. -- Private letter from House Master Oculus to Asmodeus",
+      "img": "GreyPrince",
+      "loyalty": "7",
+      "level": "3",
+      "hp": "12",
+      "attack": "13",
+      "defense": "13",
+      "infernal": "3",
+      "luck": "3",
+      "specials": {
+        "Champion of Pandemonium": ""
+      }
+    },
+    "the ba'lrag of the pit": {
+      "name": "The Ba'lrag of the Pit",
+      "description": "The Lord of Shadows is truly a magnificent champion to behold. I have seen him fight a dozen opponents simultaneously and not seem to lack in vigor or martial grace. One almost suspects that it is a form of ritualistic self annihilation to proffer a challenge to such an opponent. And yet if that is not the case then like moths to a flame they come on with naïve expectations that anything short of torment in the Abyss awaits them - From 'An Account of Philotormentius at the Grand Arena' vol. iv",
+      "img": "Balrag",
+      "loyalty": "3",
+      "level": "8",
+      "hp": "15",
+      "attack": "18",
+      "defense": "9",
+      "infernal": "9",
+      "luck": "4",
+      "specials": {
+        "Champion of Pandemonium": ""
+      }
     }
   }
 }
