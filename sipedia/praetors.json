@@ -132,6 +132,22 @@
         "level roll": "+3"
       }
     },
+    "caim": {
+      "name": "Caim",
+      "description": "The power of all mortal Shamans’ would be greatly diminished were it not for the teachings of Caim.  It is the lore of Caim that allows a mortal to bind a lesser spirit and bend it to his will.  Caim's bargain with any mortal brings with it the overwhelming desire to dominate. Caim's teaching is to not merely push and pull but rather to grip with an iron will the weak and disembodied. -- From the Book of Caim",
+      "img": "Caim",
+      "loyalty": "4",
+      "level": "4",
+      "hp": "8",
+      "attack": "3",
+      "defense": "7",
+      "infernal": "9",
+      "luck": "2",
+      "specials": {
+        "level roll": "+3",
+        "curse of prophecy": "+5%"
+      }
+    },
     "decarabia": {
       "name": "Decarabia",
       "description": "The Fulminatas moved forward in perfect formation following closely behind the mighty Decarabia. The Walls of Nasgulrawata were breached with ease by his great horn. Walls that had withstood the siege of a millennium crumbled with a sickening groan. The damned within were roasted and consumed in the following revel that lasted for years. – From 'An Examination of Siege Tactics in the Infernal Pit' vol. xii",
@@ -193,6 +209,22 @@
       "specials": {
         "melee": "+3",
         "infernal": "+2"
+      }
+    },
+    "gusion": {
+      "name": "Gusion",
+      "description": "Duke Gusion has managed once again to confound his rivals and now seeks to manipulate, connive and worm his way into a position of strength within the lesser chambers of the Conclave.  Do not be fooled by his favored form of a giant ape.  There is a cold calculating intellect behind the frequent outbursts of rage and chest beating. I am convinced however that he serves no cause but his own and thus could be of some use if his interests were to align with your lordship's. --Report from Botis the Enslaved",
+      "img": "Gusion",
+      "loyalty": "2",
+      "level": "4",
+      "hp": "13",
+      "attack": "12",
+      "defense": "8",
+      "infernal": "0",
+      "luck": "2",
+      "specials": {
+        "melee twice": "",
+        "curse of wrath": "+5%"
       }
     },
     "haagenti": {
@@ -305,6 +337,152 @@
       "specials": {
         "ranged": "+3",
         "melee": "+3"
+      }
+    },
+    "raum": {
+      "name": "Raum",
+      "description": "Keep your treasures locked away: Raum is who will take them. When a tyrant’s veins expand new lands, Raum is there to rape it. The weaker folk are rotten seeds that which perfume the good ones. Throw them out with the ash and let the healthy prosper. --From an untitled letter written by an anonymous hand, slipped into 'The Pseudomonarchia Daemonum' between pages 78 and 79",
+      "img": "Raum",
+      "loyalty": "4",
+      "level": "3",
+      "hp": "8",
+      "attack": "9",
+      "defense": "5",
+      "infernal": "6",
+      "luck": "1",
+      "specials": {
+        "melee": "+3",
+        "infernal": "+3"
+      }
+    },
+    "temeluchas": {
+      "name": "Temeluchas",
+      "description": "Stand aside: for he, Temeluchas, is the vessel chosen to bring my wrath. When my mouth speaks, Temeluchas will be the cudgel that strikes the heads of my enemies. When my mouth falls silent, he will seek out those I shall speak against next. He will wear my seal upon his breast and will carry my authority over all the Underworld. He is the sharpness of my tooth and the broad muscles of my tail. --Transcript of an oration by Lucifer on occasion of Temeluchas’s assent to Lucifer’s Private Council, translated by Suffragan Pazul",
+      "img": "Temeluchas",
+      "loyalty": "3",
+      "level": "2",
+      "hp": "12",
+      "attack": "10",
+      "defense": "10",
+      "infernal": "3",
+      "luck": "2",
+      "specials": {
+        "melee": "+5",
+        "loyalty": "+3"
+      }
+    },
+    "thammuz": {
+      "name": "Thammuz",
+      "description": "Correction of misdeeds are not for the benefit of the misdoer; they are for the benefit of the general public so that they, as a whole, may wean away from actions against the state like a baby pulled from his mother’s breast. --From 'Direction, Influence, and the Masses' by Thammuz",
+      "img": "Thammuz",
+      "loyalty": "4",
+      "level": "2",
+      "hp": "10",
+      "attack": "8",
+      "defense": "6",
+      "infernal": "0",
+      "luck": "3",
+      "specials": {
+        "ranged": "+3",
+        "level roll": "+3"
+      }
+    },
+    "valac": {
+      "name": "Valac",
+      "description": "Valac ascended from the Illuminatus to become a Greater Demon and Infernal Investigator for Lord Lucifer’s Choir. Occasionally he is known to take the image of a small waif, though sometimes, particularly when piqued, he takes the form of a man. It is here that his skin enlivens and spreads outwards like flat, fleshy tentacles. They push against the walls, floors, and chairs--any object--and they engulf these things until they are obscured from sight. --Encyclopedia Infernal",
+      "img": "Valac",
+      "loyalty": "3",
+      "level": "3",
+      "hp": "7",
+      "attack": "2",
+      "defense": "7",
+      "infernal": "9",
+      "luck": "2",
+      "specials": {
+        "level roll": "+3",
+        "loyalty": "+3",
+        "infernal": "+2"
+      }
+    },
+    "valefar": {
+      "name": "Valefar",
+      "description": "Valefar has offered me seclusion until this unrest has passed. I may accept his offer, but I do so under knowledge of the rumors against him. It is said that he walked Traanyor to the mouth of Tartarus and submitted his old friend to its service--all to rid Traanyor’s accumulation of Choir favor. Valefar seems the most likely person to turn on a friend, but perhaps that is why I may now trust him. I leave in haste. --A note found on Bishop Bezel’s desk next to an unlit candle, a wax stick, and the bishop’s seal",
+      "img": "Valefar",
+      "loyalty": "2",
+      "level": "3",
+      "hp": "11",
+      "attack": "8",
+      "defense": "4",
+      "infernal": "3",
+      "luck": "1",
+      "specials": {
+        "ranged": "+2",
+        "melee": "+2",
+        "infernal": "+2"
+      }
+    },
+    "vassago": {
+      "name": "Vassago",
+      "description": "The conjurer who evokes Vassago's spirit will receive a being of passive nature who provides prophetic insight to his master. Vassago governs twenty-nine legions of spirits and holds title as a lower prince of the Bowels. His interests are unconventional; they manifest through either symbols of restriction or symbols of governed but stylized pleasure. His words can be trusted as long as his form remains in the conjuring circle. --From 'The Pseudomonarchia Daemonum'",
+      "img": "Vassago",
+      "loyalty": "3",
+      "level": "2",
+      "hp": "11",
+      "attack": "8",
+      "defense": "8",
+      "infernal": "2",
+      "luck": "2",
+      "specials": {
+        "melee": "+3",
+        "level roll": "+4"
+      }
+    },
+    "xaphan": {
+      "name": "Xaphan",
+      "description": "Xaphan’s behavior reveals a counter productive penchant for cruelty towards subordinates. Directed to storm the walls of Vas during the First Rectification of the Vasdranai, Xaphan forced his Lieutenants to sever their weapon hands and summarily decimated his ranks before a single demon had advanced even a single step towards the battlements – vowing loudly that the price of failure would be far worse. – From the 'History of the Rectification Wars' vol. i",
+      "img": "Xaphan",
+      "loyalty": "4",
+      "level": "4",
+      "hp": "12",
+      "attack": "6",
+      "defense": "6",
+      "infernal": "3",
+      "luck": "3",
+      "specials": {
+        "infernal": "+3",
+        "infernal first": ""
+      }
+    },
+    "zepar": {
+      "name": "Zepar",
+      "description": "Zepar's disgrace has been set into motion. My efforts have ensured that he will march his legion away from the front and chase phantoms and fading hopes of glory for a considerable amount of time. When his lord expects him to arrive to provide support in the impending battle, he will be nowhere to be found.  How easy it has been to feed his puffed ego and convince him that he deserves to deliver the death blow. At what point will he realize that he has been manipulated so cleverly? I cannot tell. I only wish I could be there when he realizes that it is I who has betrayed him",
+      "img": "Zepar",
+      "loyalty": "3",
+      "level": "4",
+      "hp": "12",
+      "attack": "7",
+      "defense": "12",
+      "infernal": "3",
+      "luck": "2",
+      "specials": {
+        "curse of deceit": "+5%",
+        "block combat cards": ""
+      }
+    },
+    "zuul": {
+      "name": "Zuul",
+      "description": "Rx. One hundred minds under her control. Nine lovers lost to the sea. Eight doors from which we take our choice. Four thousand corpses exhumed then freed. It is with these things that Zuul stakes claim on heads and on hearts and on purity. Let her breasts nurse no other. Only one offspring for she. --From 'A Wayward Cause' by Sister Cui",
+      "img": "Zuul",
+      "loyalty": "2",
+      "level": "3",
+      "hp": "10",
+      "attack": "8",
+      "defense": "8",
+      "infernal": "3",
+      "luck": "2",
+      "specials": {
+        "ranged": "+3",
+        "infernal": "+3"
       }
     }
   }
