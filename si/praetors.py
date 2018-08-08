@@ -62,7 +62,6 @@ class Praetors:
             praetor_data = self.praetors.get(praetor)
             praetor_names.append(praetor_data['name'])
             praetor_names = sorted(praetor_names)
-
         if subcommand is None:
             embed_description = self.description
             embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
@@ -76,7 +75,8 @@ class Praetors:
                 await ctx.send("This command provides information about Praetors.\nThe following sub commands are available:" +
                 "\n`praetor info <name>" +
                 "\npraetor info " + "\npraetor info ".join(self.info.keys()) + "`")
-            elif item.title() in praetor_names:
+            elif item.lower() in self.praetors.keys():
+            #elif item.title() in praetor_names:
                 self.get_praetor_data(item)
                 self.create_embed()
                 await ctx.send(embed=self.embed)
@@ -136,8 +136,8 @@ class Praetors:
                 await ctx.send("You must specify the special ability to search for Praetors.")
             elif item.title() in praetor_specials:
                 praetors_with_special = self.get_praetors_with_special(item.lower())
-                await ctx.send("The following Praetors were found with the special ability **" + item.title() + "**: " + ", ".join(praetors_with_special) + 
-                "\nYou may use the `praetor info <name>` command to get information about a specific praetor.")
+                await ctx.send("The following Praetors were found with the special ability **" + item.title() + "**: `" + "`, `".join(praetors_with_special) + 
+                "`\n\nYou may use the `praetor info <name>` command to get information about a specific praetor.")
             else:
                 await ctx.send(f"No Praetors have the special ability: **{item}**")
 
