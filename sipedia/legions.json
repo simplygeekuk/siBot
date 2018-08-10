@@ -6,34 +6,7 @@
     "": "",
     "": "",
     "": "",
-    "": "",
-    "": {
-      "": "",
-      "": "",
-      "": "",
-      "": "",
-      "": ""
-    },
-    "exotic combat moves": {
-      "description": "Praetors can learn other, more powerful combat moves by training with Manuscripts. Some Manuscripts require a single piece for training, although, the more powerful moves require you to collect two or three matching pieces for their completion. Exotic combat moves follow the same rules with Skulls, Shields, and Orbs as do their basic move counterparts, although special bonuses may apply bonus damage or grant special advantages during that combat round.",
-      "bleeding wound": "1-5 Skulls\nIn addition to combat damage, do 1 additional point of damage to your opponent in every following combat move phase until the beginning of the next round if your assigned skulls exceeds your opponent's assigned shields.",
-      "blood boil": "5 Orbs\nDo 1d6 damage to opponent. Do an additional point of damage for each level of your Praetor.",
-      "bone breaker": "6 Skulls\nIn addition to combat damage, do one additional point of damage to your opponent for each Shield he assigned during both his current combat phase and its preceding phase. You must do combat damage for the bonus to trigger.",
-      "crippling strike": "1 Skull\nIf your Praetor’s level exceeds your opponent’s assigned Shields for the phase in which Crippling Strike is used, remove 1d6 + 1 per Praetor level of assigned Skulls from your opponent’s combat moves in all subsequent phases for the rest of the round.",
-      "demonic trance": "6 Orbs\nThere is a 20% chance plus 5% per level of your Praetor that this combat move will negate each subsequent combat move of the opposing Praetor for the remaining combat phases in this round.\nThe negation test is done for each of your opponents moves, not for the whole round. Typically you'll negate some, but not all of the opponents moves each round.",
-      "impale": "1-4 Skulls, 1-6 Shields\nIn addition to normal combat damage, do one additional point of damage to your opponent for each assigned Shield that exceeds your opponent’s assigned Skulls in the same combat move phase. You must do combat damage for the bonus to trigger.",
-      "impenetrable stance": "6 Shields\nBlock two points of damage for every Shield that you assign (This includes the same phase that Impenetrable Stance is used. It lasts for the rest of the round).",
-      "lava orb": "4 Orbs\nDo 2d6 points of damage to opponent.",
-      "mind burn": "4 Orbs\nDo 1d6 damage to opponent. If your Praetor’s Infernal power is greater than your opponent’s Infernal power, do an additional 1d6.",
-      "oath of retribution": "2 Orbs\nIf the opposing Praetor’s combat move inflicts damage, the opposing Praetor receives triple the damage inflicted; you receive none.\nAny defenses your praetor has will be applied before tripling the damage (so luck will reduce melee damage). After tripling, the damage will be applied back as direct damage so the opposing praetor's luck will not have an effect.",
-      "obsidian skin": "3 Orbs\nBlock 2d6 points of damage for the remaining combat phases in this round. (This includes the same phase that Obsidian Skin is used.)",
-      "piercing lunge": "1-7 Skulls\nIn addition to normal combat damage, do 1d6 in damage to opponent if your assigned Skulls exceed your opponent’s assigned Skulls. You must do combat damage for the bonus to trigger.",
-      "sinew slice": "1-7 Skulls\nIn addition to combat damage, do 1d6 in damage for every two assigned Skulls in your opponent’s current combat phase. You must do combat damage for the bonus to trigger.",
-      "rain of brimstone": "6 Orbs\nDo 3d6 points of damage to opponent.",
-      "tentacle rupture": "4 Orbs\nDo three points of damage to opponent for each combat move you have already performed.",
-      "veil of smoke": "3 Orbs\nBlock 1d6 + 1 per Praetor level of damage from opponent during the remaining combat phases in this round. (This includes the same phase that Veil of Smoke is used.)",
-      "vile oath of consumption": "6 Orbs\nDo 1d4 points of damage to opponent for every level of your Infernal power."
-    }
+    "": ""
   },
   "legions": {
     "abyssal striders": {
@@ -48,13 +21,56 @@
       "infernal": "0",
       "move": "3",
       "specials": {
-        "": ""
       },
 	  "upkeep": {
-	  "souls": "0",
-	  "ichor": "0",
-	  "hellfire": "0",
-	  "darkness": "0"
+	  }
+    },
+    "acheron's butchers": {
+      "name": "Acheron's Butchers",
+      "description": "Nothing I have ever seen compares. The hands of Mammon and Balphegor engaged at Sieve Valley. The Bordellos (Balphegor's shock troops) broke through the block of Letheans and were on the cusp of pushing those wallys into discord. From the ground arose this clipping sound of bird beaks and crab claws. Thousands of creatures surfaced. They tore through Bordello's flank with vice-like fists, then seperated those lush bodies like pulled meat. But as fast as they came, they were gone. The Lethean Phalanx simply stood and turned their heads some. -An account from the Battle of Sieve Valley",
+      "img": "AcheronsButchers",
+      "loyalty": "2",
+      "level": "2",
+      "hp": "11",
+      "ranged": "4",
+      "melee": "3",
+      "infernal": "0",
+      "move": "2",
+      "specials": {
+      },
+	  "upkeep": {
+	  }
+    },
+    "oni's faithful": {
+      "name": "Oni's Faithful",
+      "description": "A few rocks moved, then the opened carcass of a demon turned over. A bump in the earth shifted some, almost in a rolling fashion, then moved closer to the cliff’s edge. Once all was quiet, small figures--no bigger than a human child--emerged in numbers too high to count. They came from everywhere with blades unclothed and heads turning side to side. They formed a mass of figures in the field before our city Pandemonium. --From a witness’s account of the first attempt to de-power Lucifer and the city Pandemonium",
+      "img": "OniFaithful",
+      "loyalty": "3",
+      "level": "2",
+      "hp": "8",
+      "ranged": "3",
+      "melee": "4",
+      "infernal": "0",
+      "move": "2",
+      "specials": {
+      },
+	  "upkeep": {
+	  }
+    },
+    "ten thousand screaming bastards": {
+      "name": "Ten Thousand Screaming Bastards",
+      "description": "In my visions I witnessed a battle in which we were washed away by the rising tide of red flesh. I was lifted atop the pricking nails of a thousand hands, and you, my lord, were being torn apart at the mouth and neck. These visions bode not well, my lord. I have troubled sleep. --A private letter from Suffragan Letor to Bishop Maddox of the First Level before their untimely departures during the Stix Incursion",
+      "img": "ScreamingBastards",
+      "loyalty": "2",
+      "level": "2",
+      "hp": "8",
+      "ranged": "2",
+      "melee": "5",
+      "infernal": "0",
+      "move": "3",
+      "specials": {
+      },
+	  "upkeep": {
 	  }
     }
   }
