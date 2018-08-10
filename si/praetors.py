@@ -34,27 +34,20 @@ except configparser.NoSectionError as e:
 base_image_url = discord_default_config['base_image_url']
 image_format = discord_default_config['image_format']
 si_wiki_url = discord_solium_config['si_wiki_url']
-location = "praetors"
-# valid_channel_names = ['help']
+gameObjectType = "praetors"
 
-# async def is_valid_channel(ctx):
-    # if not ctx.message.guild:
-        # return True
-    # else:
-        # return ctx.message.channel.name.lower() in valid_channel_names
 
 class Praetors:
     def __init__(self, bot):
         self.bot = bot
-        with open(sipedia_dir + location + '.json') as json_file:
+        with open(sipedia_dir + gameObjectType + '.json') as json_file:
             praetors_file = json.load(json_file)
             self.description = praetors_file['description']
             self.info = praetors_file['info']
-            self.praetors = praetors_file[location]
+            self.praetors = praetors_file[gameObjectType]
 
 
     @commands.command(name='praetor', aliases=['Praetor', 'praetors', 'Praetors', 'pr'])
-    # @commands.check(is_valid_channel)
     async def get_praetor(self, ctx, subcommand=None, *, item=None):
         '''- Get information about Praetors.'''
         praetor_names = []
@@ -69,62 +62,46 @@ class Praetors:
             await ctx.send(embed=embed)
             await ctx.send("You may use the `praetor list` command to list Praetors that are known to me or `praetor info` to get information about Praetors.")
         elif subcommand.lower() == 'list':
-            await ctx.send("The following Praetors are known to me: **" + "**, **".join(praetor_names) + "**.\n\nYou may use the `praetor info <name>` command to get information about a specific Praetor.")
+            await ctx.send("You can learn more about the following Praetors: `" + "`, `".join(praetor_names) + "`.\n\nYou may use the `praetor info <name>` command to get information about a specific Praetor.")
         elif subcommand.lower() == 'info':
             if item is None:
-                await ctx.send("This command provides information about Praetors.\nThe following sub commands are available:" +
-                "\n`praetor info <name>" +
-                "\npraetor info " + "\npraetor info ".join(self.info.keys()) + "`")
+                await ctx.send("This command provides information about Praetors. The following items can be queried: `" + "`, `".join(self.info.keys()) + "`\n\n" +
+                "You may use the `praetor info <item>` command to learn more about a specific item.")
             elif item.lower() in self.praetors.keys():
-            #elif item.title() in praetor_names:
                 self.get_praetor_data(item)
-                self.create_embed()
+                self.create_praetor_embed()
                 await ctx.send(embed=self.embed)
             elif item.lower() in self.info.keys():
                 if item.lower() == 'special abilities':
                     praetor_specials = self.get_praetor_specials()
                     praetor_specials = sorted(praetor_specials)
-                    embed_description = self.info[item.lower()] + "\n\nPraetors have the following special abilities: **" + "**, **".join(praetor_specials) + "**"
-                    embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
-                    embed.set_author(name=item.title())
+                    embed = self.create_info_embed(item, self.info[item.lower()] + "\n\nPraetors have the following special abilities: `" + "`, `".join(praetor_specials) + "`")
                     await ctx.send(embed=embed)
                     await ctx.send("You may use the `praetor hasspecial <special>` command to list Praetors that have that special ability.")
                 elif item.lower() == 'single combat':
-                    embed_description = self.info[item.lower()]
-                    embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
-                    embed.set_author(name=item.title())
+                    embed = self.create_info_embed(item, self.info[item.lower()])
                     await ctx.send(embed=embed)
                     await ctx.send("You may use the `praetor info [basic|exotic] combat moves` command to learn more about combat moves.")
                 elif item.lower() == "basic combat moves":
-                    embed_description = self.info[item.lower()]['description']
-                    embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
-                    embed.set_author(name=item.title())
+                    embed = self.create_info_embed(item, self.info[item.lower()]['description'])
                     await ctx.send(embed=embed)
                     await ctx.send("You may use the `praetor info <basic combat move>` command to get information about a specific combat move.")
                 elif item.lower() == "exotic combat moves":
-                    embed_description = self.info[item.lower()]['description']
                     exotic_combat_moves = []
                     for exotic in self.info['exotic combat moves'].keys():
                         if exotic != 'description':
                             exotic_combat_moves.append(exotic.title())
-                    embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description + "\n\nThe following exotic combat moves are available: **" + "**, **".join(exotic_combat_moves) + "**")
-                    embed.set_author(name=item.title())
+                    embed = self.create_info_embed(item, self.info[item.lower()]['description'] + "\n\nThe following exotic combat moves are available: `" + "`, `".join(exotic_combat_moves) + "`")
                     await ctx.send(embed=embed)
                     await ctx.send("You may use the `praetor info <exotic combat move>` command to get information about a specific combat move.")                
                 else:
-                    embed_description = self.info[item.lower()]
-                    embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
-                    embed.set_author(name=item.title())
+                    embed = self.create_info_embed(item, self.info[item.lower()])
                     await ctx.send(embed=embed)
             elif item.lower() in self.info['basic combat moves'].keys():
-                embed_description = self.info['basic combat moves'][item.lower()]
-                embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
-                embed.set_author(name=item.title())
+                embed = self.create_info_embed(item, self.info['basic combat moves'][item.lower()])
                 await ctx.send(embed=embed)
             elif item.lower() in self.info['exotic combat moves'].keys():
-                embed_description = self.info['exotic combat moves'][item.lower()]
-                embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
-                embed.set_author(name=item.title())
+                embed = self.create_info_embed(item, self.info['exotic combat moves'][item.lower()])
                 await ctx.send(embed=embed)
             elif item.lower() == ctx.message.author.name.lower():
                 await ctx.send(f"{ctx.message.author.mention}, the legions of hell would not consider you worthy enough to lead them into battle.")
@@ -136,10 +113,10 @@ class Praetors:
                 await ctx.send("You must specify the special ability to search for Praetors.")
             elif item.title() in praetor_specials:
                 praetors_with_special = self.get_praetors_with_special(item.lower())
-                await ctx.send("The following Praetors were found with the special ability **" + item.title() + "**: `" + "`, `".join(praetors_with_special) + 
+                await ctx.send("The following Praetors were found with the special ability `" + item.title() + "`: `" + "`, `".join(praetors_with_special) + 
                 "`\n\nYou may use the `praetor info <name>` command to get information about a specific praetor.")
             else:
-                await ctx.send(f"No Praetors have the special ability: **{item}**")
+                await ctx.send(f"No Praetors have the special ability: `{item}`")
 
                 
     def get_praetor_data(self, praetor_name):
@@ -159,10 +136,10 @@ class Praetors:
         # self.upkeep = praetor_data['upkeep']
 
         
-    def create_embed(self):
+    def create_praetor_embed(self):
         specials = []
         self.embed = discord.Embed(colour=discord.Colour(0xd0021b), description=self.desc)
-        self.embed.set_thumbnail(url=base_image_url + location + "/" + self.img + "." + image_format)
+        self.embed.set_thumbnail(url=base_image_url + gameObjectType + "/" + self.img + "." + image_format)
         self.embed.set_author(name=self.name, url=si_wiki_url + self.name.replace(" ", "_"))
         self.embed.add_field(name="Level", value=self.level, inline=True)
         self.embed.add_field(name="Loyalty", value=self.loyalty, inline=True)
@@ -183,6 +160,11 @@ class Praetors:
                                             # + ", Hellfire: " + self.upkeep['hellfire'] + ", Darkness: " + self.upkeep['darkness'])
 
 
+    def create_info_embed(self, item, embed_description):
+        embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
+        embed.set_author(name=item.title())
+        return embed
+                                            
     def get_praetors_with_special(self, special):
         selected_praetors = []
         for praetor in self.praetors.keys():
@@ -202,7 +184,7 @@ class Praetors:
         return praetor_specials
 
     
-# The setup fucntion below is neccesarry. Remember we give bot.add_cog() the name of the class in this case MembersCog.
-# When we load the cog, we use the name of the file.
+# The setup function below is necessary. Remember we give bot.add_cog() the name of the class, in this case MembersCog.
+# When we load the cog, we use the name of the class.
 def setup(bot):
     bot.add_cog(Praetors(bot))
