@@ -58,7 +58,7 @@ class Praetors:
         if subcommand is None:
             embed_description = self.description
             embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
-            embed.set_author(name="Praetors")
+            embed.set_author(name=gameObjectType.title())
             await ctx.send(embed=embed)
             await ctx.send("You may use the `praetor list` command to list Praetors that are known to me or `praetor info` to get information about Praetors.")
         elif subcommand.lower() == 'list':
