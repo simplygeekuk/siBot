@@ -79,19 +79,7 @@ class Legions:
                 elif item.lower() == 'single combat':
                     embed = self.create_info_embed(item, self.info[item.lower()])
                     await ctx.send(embed=embed)
-                    await ctx.send("You may use the `praetor info [basic|exotic] combat moves` command to learn more about combat moves.")
-                elif item.lower() == "basic combat moves":
-                    embed = self.create_info_embed(item, self.info[item.lower()]['description'])
-                    await ctx.send(embed=embed)
-                    await ctx.send("You may use the `praetor info <basic combat move>` command to get information about a specific combat move.")
-                elif item.lower() == "exotic combat moves":
-                    exotic_combat_moves = []
-                    for exotic in self.info['exotic combat moves'].keys():
-                        if exotic != 'description':
-                            exotic_combat_moves.append(exotic.title())
-                    embed = self.create_info_embed(item, self.info[item.lower()]['description'] + "\n\nThe following exotic combat moves are available: `" + "`, `".join(exotic_combat_moves) + "`")
-                    await ctx.send(embed=embed)
-                    await ctx.send("You may use the `praetor info <exotic combat move>` command to get information about a specific combat move.")                
+                    await ctx.send("You may use the `praetor info [basic|exotic] combat moves` command to learn more about combat moves.")            
                 else:
                     embed = self.create_info_embed(item, self.info[item.lower()])
                     await ctx.send(embed=embed)
@@ -129,8 +117,10 @@ class Legions:
         self.melee = legion_data['melee']
         self.infernal = legion_data['infernal']
         self.move = legion_data['move']
-        self.specials = legion_data['specials']
-        self.upkeep = legion_data['upkeep']
+        if legion_data['specials']:
+            self.specials = legion_data['specials']
+        if legion_data['upkeep']:
+            self.upkeep = legion_data['upkeep']
 
         
     def create_legion_embed(self):
@@ -143,18 +133,22 @@ class Legions:
         self.embed.add_field(name="Hit Points", value=self.hp, inline=True)
         self.embed.add_field(name="Movement", value=self.move, inline=True)
         self.embed.add_field(name="Ranged/Melee/Infernal", value=self.ranged + " / " + self.melee + " / " + self.infernal, inline=True)
-        for special, modifier in self.specials.items():
-            if modifier is not None:
-                specials.append("- " + special.title() + " " + modifier)
-            else:
-                specials.append(special.title())
-        self.embed.add_field(name="Specials", value="\n".join(specials))
-        if self.upkeep:
+        try:
+            for special, modifier in self.specials.items():
+                if modifier is not None:
+                    specials.append("- " + special.title() + " " + modifier)
+                else:
+                    specials.append(special.title())
+            self.embed.add_field(name="Specials", value="\n".join(specials))
+        except AttributeError:
+            self.embed.add_field(name="Specials", value="\n-")
+        try:
             self.embed.add_field(name="Upkeep", value="Souls: " + self.upkeep['souls'] + 
                                                 ", Ichor: " + self.upkeep['ichor'] +
                                                 ", Hellfire: " + self.upkeep['hellfire'] + 
                                                 ", Darkness: " + self.upkeep['darkness'])
-
+        except AttributeError:
+            pass
 
     def create_info_embed(self, item, embed_description):
         embed = discord.Embed(colour=discord.Colour(0x6e1df7), description=embed_description)
