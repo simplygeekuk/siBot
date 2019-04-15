@@ -1,6 +1,4 @@
-aiohttp==3.3.2
-async-timeout==3.0.0
-configparser==3.5.0
-git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py
-dropbox==9.0.0
-requests==2.19.1
+configparser
+discord.py
+dropbox
+requests
