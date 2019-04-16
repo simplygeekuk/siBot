@@ -36,7 +36,7 @@ image_format = discord_default_config['image_format']
 si_wiki_url = discord_solium_config['si_wiki_url']
 gameObjectType = "legions"
 		
-class Legions:
+class Legions(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         with open(sipedia_dir + gameObjectType + '.json') as json_file:
