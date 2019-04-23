@@ -6,7 +6,7 @@ import configparser
 # Set some useful directories
 si_dir = os.path.dirname(os.path.realpath(__file__))
 base_dir = os.path.join(si_dir, '..')
-sipedia_dir = os.path.join(base_dir, 'sipedia/')
+sipedia_dir = os.path.join(base_dir, 'si_data/')
 # print(sipedia_dir)
 
 config = configparser.ConfigParser()
@@ -40,7 +40,7 @@ gameObjectType = "praetors"
 class Praetors(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        with open(sipedia_dir + gameObjectType + '.json') as json_file:
+        with open(sipedia_dir + gameObjectType + '.json', encoding='utf-8') as json_file:
             praetors_file = json.load(json_file)
             self.description = praetors_file['description']
             self.info = praetors_file['info']
@@ -111,10 +111,10 @@ class Praetors(commands.Cog):
             praetor_specials = self.get_praetor_specials()
             if item is None:
                 await ctx.send("You must specify the special ability to search for Praetors.")
-            elif item.title() in praetor_specials:
+            elif item in praetor_specials:
                 praetors_with_special = self.get_praetors_with_special(item.lower())
                 await ctx.send("The following Praetors were found with the special ability `" + item.title() + "`: `" + "`, `".join(praetors_with_special) + 
-                "`\n\nYou may use the `praetor info <name>` command to get information about a specific praetor.")
+                               "`\n\nYou may use the `praetor info <name>` command to get information about a specific praetor.")
             else:
                 await ctx.send(f"No Praetors have the special ability: `{item}`")
 
@@ -137,6 +137,7 @@ class Praetors(commands.Cog):
 
         
     def create_praetor_embed(self):
+        '''Creates an embedded Praetor Portrait.'''
         specials = []
         self.embed = discord.Embed(colour=discord.Colour(0xd0021b), description=self.desc)
         self.embed.set_thumbnail(url=base_image_url + gameObjectType + "/" + self.img + "." + image_format)

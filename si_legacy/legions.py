@@ -39,7 +39,7 @@ gameObjectType = "legions"
 class Legions(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        with open(sipedia_dir + gameObjectType + '.json') as json_file:
+        with open(sipedia_dir + gameObjectType + '.json', encoding='utf-8') as json_file:
             legions_file = json.load(json_file)
             self.description = legions_file['description']
             self.info = legions_file['info']
