@@ -3,3 +3,4 @@ discord.py==1.0.1
 dropbox
 requests
 pep8
+flake8
