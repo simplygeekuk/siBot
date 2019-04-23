@@ -107,12 +107,12 @@ class Praetor_commands(commands.Cog):
                     item_desc = self._info[item]["description"]
                     embed = self._create_info_embed(subcommand,
                                                     f'{item_desc}'
-                                                    f'\n\nThe following exotic combat moves are available:'  # noqa
-                                                    f'{cf.inline(", ".join(exotic_combat_moves))}')  # noqa
+                                                    f'\n\nThe following exotic combat moves are available:'  # noqa: line-too-long
+                                                    f'{cf.inline(", ".join(exotic_combat_moves))}')  # noqa: line-too-long
                     await ctx.send(embed=embed)
                     await ctx.send(f'You may use the'
-                                   f' {cf.inline("praetor info <exotic combat move>")}'  # noqa
-                                   f' command to get information about a specific combat move.')  # noqa
+                                   f' {cf.inline("praetor info <exotic combat move>")}'  # noqa: line-too-long
+                                   f' command to get information about a specific combat move.')  # noqa: line-too-long
                 else:
                     embed = self._create_info_embed(subcommand,
                                                     self._info[item])
@@ -150,9 +150,9 @@ class Praetor_commands(commands.Cog):
 
                 await ctx.send(f'The following Praetors were found'
                                f' with the special ability'
-                               f' {cf.bold(item.title())}: {cf.inline(", ".join(praetors_with_special))}'  # noqa
-                               f'\n\nYou may use the {cf.inline("praetor info <name>")}'  # noqa
-                               f' command to get information about a specific praetor.')  # noqa
+                               f' {cf.bold(item.title())}: {cf.inline(", ".join(praetors_with_special))}'  # noqa: line-too-long
+                               f'\n\nYou may use the {cf.inline("praetor info <name>")}'  # noqa: line-too-long
+                               f' command to get information about a specific praetor.')  # noqa: line-too-long
             else:
                 await ctx.send(f'No Praetors have the'
                                f' special ability: {cf.inline(subcommand)}')
