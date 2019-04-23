@@ -23,17 +23,24 @@ class Settings:
 
         self.default_config = self._get_config_section('DEFAULT')
         self.default = {}
-        self.default['extensions'] = self._get_section_attrib(self.default_config, 'extensions').split(',')
+        self.default['extensions'] = self._get_section_attrib(self.default_config, 'extensions').split(',')  # noqa: line-too-long
 
         self.discord_config = self._get_config_section('DISCORD')
         self.discord = {}
-        self.discord['bot_token'] = self._get_section_attrib(self.discord_config, 'bot_token')
-        self.discord['bot_description'] = self._get_section_attrib(self.discord_config, 'bot_description')
-        self.discord['bot_reconnect'] = self._get_section_attrib(self.discord_config, 'bot_reconnect', True)
-        self.discord['bot_prefix_ch'] = self._get_section_attrib(self.discord_config, 'bot_prefix_channel')
-        self.discord['bot_prefix_dm'] = self._get_section_attrib(self.discord_config, 'bot_prefix_message')
-        self.discord['bot_respond_on_mention'] = self._get_section_attrib(self.discord_config, 'bot_respond_on_mention')
-        self.discord['bot_valid_channels'] = self._get_section_attrib(self.discord_config, 'bot_valid_channels').split(',')
+        self.discord['bot_token'] = self._get_section_attrib(self.discord_config,  # noqa: line-too-long
+                                                             'bot_token')
+        self.discord['bot_description'] = self._get_section_attrib(self.discord_config,  # noqa: line-too-long
+                                                                   'bot_description')  # noqa: line-too-long
+        self.discord['bot_reconnect'] = self._get_section_attrib(self.discord_config,  # noqa: line-too-long
+                                                                 'bot_reconnect', True)  # noqa: line-too-long
+        self.discord['bot_prefix_ch'] = self._get_section_attrib(self.discord_config,  # noqa: line-too-long
+                                                                 'bot_prefix_channel')  # noqa: line-too-long
+        self.discord['bot_prefix_dm'] = self._get_section_attrib(self.discord_config,  # noqa: line-too-long
+                                                                 'bot_prefix_message')  # noqa: line-too-long
+        self.discord['bot_respond_on_mention'] = self._get_section_attrib(self.discord_config,  # noqa: line-too-long
+                                                                          'bot_respond_on_mention')  # noqa: line-too-long
+        self.discord['bot_valid_channels'] = self._get_section_attrib(self.discord_config,  # noqa: line-too-long
+                                                                      'bot_valid_channels').split(',')  # noqa: line-too-long
 
         # self.dropbox_config = self._get_config_section('DROPBOX')
         # self.dropbox = {}
@@ -43,7 +50,8 @@ class Settings:
         try:
             self.config.read_file(open(base_dir + "/" + config_file))
         except FileNotFoundError:
-            print("Failed to open config file. " + config_file + " not found in " + base_dir)
+            print(f'Failed to open config file.'
+                  f' {config_file} not found in {base_dir}')
             # raise
             sys.exit(1)
 
@@ -66,7 +74,7 @@ class Settings:
         except configparser.NoOptionError:
             print(attrib + " not set in config file.")
             raise
-        if not attribValue:  # Need to do more work here to properly handle booleans.
+        if not attribValue:  # Need to do more work here to properly handle booleans.  # noqa: line-too-long
             raise configparser.Error("No value was found for " + attrib)
         return attribValue
 
