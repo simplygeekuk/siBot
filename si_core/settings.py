@@ -1,13 +1,15 @@
-import os, sys
+import os
+import sys
 import configparser
 
 # Set some useful directories
 si_core_dir = os.path.dirname(os.path.realpath(__file__))
 base_dir = os.path.join(si_core_dir, '..')
-base_image_url = "http://www.simplygeek.co.uk/si/images/"
+base_image_url = r'http://www.simplygeek.co.uk/si/images/'
 image_format = "png"
-si_wiki_url = "http://si.battlespot.com/wiki/"
-#config_file = base_dir + "/config.cfg"
+si_wiki_url = r'http://si.battlespot.com/wiki/'
+# config_file = base_dir + "/config.cfg"
+
 
 class Settings:
     '''siBot Settings'''
@@ -33,9 +35,8 @@ class Settings:
         self.discord['bot_respond_on_mention'] = self._get_section_attrib(self.discord_config, 'bot_respond_on_mention')
         self.discord['bot_valid_channels'] = self._get_section_attrib(self.discord_config, 'bot_valid_channels').split(',')
 
-        #self.dropbox_config = self._get_config_section('DROPBOX')
-        #self.dropbox = {}
-
+        # self.dropbox_config = self._get_config_section('DROPBOX')
+        # self.dropbox = {}
 
     def _get_config(self, config_file):
         '''Loads the configuration file.'''
@@ -43,9 +44,8 @@ class Settings:
             self.config.read_file(open(base_dir + "/" + config_file))
         except FileNotFoundError:
             print("Failed to open config file. " + config_file + " not found in " + base_dir)
-            #raise
+            # raise
             sys.exit(1)
-
 
     def _get_config_section(self, section: str):
         '''Gets a configuration section from the config file.'''
@@ -55,7 +55,6 @@ class Settings:
             print("Could not find '[" + section + "]' section in config")
             raise
         return section_config
-
 
     def _get_section_attrib(self, section, attrib: str, isBool=False):
         '''Gets a specific attribute from a configuration section'''
@@ -67,7 +66,7 @@ class Settings:
         except configparser.NoOptionError:
             print(attrib + " not set in config file.")
             raise
-        if not attribValue: # Need to do more work here to properly handle booleans.
+        if not attribValue:  # Need to do more work here to properly handle booleans.
             raise configparser.Error("No value was found for " + attrib)
         return attribValue
 
