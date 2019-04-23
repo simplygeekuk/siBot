@@ -1,33 +1,60 @@
-from .utils.dataIO import dataIO
+from si_core.settings import Settings as settings
+import discord
+# from discord.ext import commands
+import os
+# from sibot import bot_settings as settings
+
+si_dir = os.path.dirname(os.path.realpath(__file__))
+base_dir = os.path.join(si_dir, '..')
+sidata_dir = os.path.join(base_dir, 'si_data/')
+
 
 class Praetor:
-    """Praetor instance class"""
-    def __init__(self, **praetor_data):
-        self.name = praetor_data['name']
-        self.desc =  praetor_data['description']
-        self.img =  praetor_data['img']
-        self.loyalty = praetor_data['loyalty']
-        self.level = praetor_data['level']
-        self.hp = praetor_data['hp']
-        self.attack = praetor_data['attack']
-        self.defense = praetor_data['defense']
-        self.infernal = praetor_data['infernal']
-        self.luck = praetor_data['luck']
-        self.specials = praetor_data['specials']
-        
-    def create_embed(self):
+    """Creates an instance of a Praetor."""
+    def __init__(self, name, description, img, loyalty, level, hp,
+                 attack, defense, infernal, luck, specials):
+        self.name = name
+        self.description = description
+        self.img = img
+        self.loyalty = loyalty
+        self.level = level
+        self.hp = hp
+        self.attack = attack
+        self.defense = defense
+        self.infernal = infernal
+        self.luck = luck
+        self.specials = specials
+        self._object_type = "praetors"
+        self._settings = settings()
+
+    async def create_embed_portrait(self):
+        '''Creates an embedded Praetor portrait.'''
         specials = []
-        self.embed = discord.Embed(colour=discord.Colour(0xd0021b), description=self.desc)
-        self.embed.set_thumbnail(url=base_image_url + gameObjectType + "/" + self.img + "." + image_format)
-        self.embed.set_author(name=self.name, url=si_wiki_url + self.name.replace(" ", "_"))
-        self.embed.add_field(name="Level", value=self.level, inline=True)
-        self.embed.add_field(name="Loyalty", value=self.loyalty, inline=True)
-        self.embed.add_field(name="Hit Points", value=self.hp, inline=True)
-        self.embed.add_field(name="Luck", value=self.luck, inline=True)
-        self.embed.add_field(name="Attack/Defense/Infernal", value=self.attack + " / " + self.defense + " / " + self.infernal, inline=True)
+        self._embed = discord.Embed(colour=discord.Colour(0xd0021b),
+                                    description=self.description)
+        self._embed.set_thumbnail(url=self._settings.image_url +
+                                  self._object_type +
+                                  "/" + self.img +
+                                  "." + self._settings.image_format)
+        self._embed.set_author(name=self.name,
+                               url=self._settings.si_wiki_url +
+                               self.name.replace(" ", "_"))
+        self._embed.add_field(name="Level", value=self.level,
+                              inline=True)
+        self._embed.add_field(name="Loyalty", value=self.loyalty,
+                              inline=True)
+        self._embed.add_field(name="Hit Points", value=self.hp,
+                              inline=True)
+        self._embed.add_field(name="Luck", value=self.luck, inline=True)
+        self._embed.add_field(name="Attack/Defense/Infernal",
+                              value=self.attack + " / " +
+                              self.defense + " / " +
+                              self.infernal,
+                              inline=True)
         for special, modifier in self.specials.items():
             if modifier is not None:
                 specials.append("- " + special.title() + " " + modifier)
             else:
                 specials.append(special.title())
-        self.embed.add_field(name="Specials", value="\n".join(specials))
+        self._embed.add_field(name="Specials", value="\n".join(specials))
+        return self._embed
