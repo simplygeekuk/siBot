@@ -1,4 +1,5 @@
 configparser
-discord.py
+discord.py==1.0.1
 dropbox
 requests
+pep8
