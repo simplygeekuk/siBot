@@ -22,7 +22,7 @@ class Praetor:
         self._settings = settings()
 
     async def create_embed_portrait(self):
-        '''Creates an embedded Praetor portrait.'''
+        '''Creates a Discord embedded object for the Praetor portrait.'''
         specials = []
         self._embed = discord.Embed(colour=discord.Colour(0xd0021b),
                                     description=self.description)
