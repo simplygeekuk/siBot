@@ -1,12 +1,6 @@
-from si_core.settings import Settings as settings
+from core.settings import Settings as settings
 import discord
 # from discord.ext import commands
-import os
-# from sibot import bot_settings as settings
-
-si_dir = os.path.dirname(os.path.realpath(__file__))
-base_dir = os.path.join(si_dir, '..')
-sidata_dir = os.path.join(base_dir, 'si_data/')
 
 
 class Praetor:
@@ -39,13 +33,18 @@ class Praetor:
         self._embed.set_author(name=self.name,
                                url=self._settings.si_wiki_url +
                                self.name.replace(" ", "_"))
-        self._embed.add_field(name="Level", value=self.level,
+        self._embed.add_field(name="Level",
+                              value=self.level,
                               inline=True)
-        self._embed.add_field(name="Loyalty", value=self.loyalty,
+        self._embed.add_field(name="Loyalty",
+                              value=self.loyalty,
                               inline=True)
-        self._embed.add_field(name="Hit Points", value=self.hp,
+        self._embed.add_field(name="Hit Points",
+                              value=self.hp,
                               inline=True)
-        self._embed.add_field(name="Luck", value=self.luck, inline=True)
+        self._embed.add_field(name="Luck",
+                              value=self.luck,
+                              inline=True)
         self._embed.add_field(name="Attack/Defense/Infernal",
                               value=self.attack + " / " +
                               self.defense + " / " +
@@ -56,5 +55,6 @@ class Praetor:
                 specials.append("- " + special.title() + " " + modifier)
             else:
                 specials.append(special.title())
-        self._embed.add_field(name="Specials", value="\n".join(specials))
+        self._embed.add_field(name="Specials",
+                              value="\n".join(specials))
         return self._embed
