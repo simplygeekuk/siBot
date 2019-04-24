@@ -3,8 +3,7 @@ from discord.ext import commands
 import os
 import sys
 import traceback
-import json
-from si_core.settings import Settings
+from core.settings import Settings
 
 # Set some useful directories.
 base_dir = os.path.dirname(os.path.realpath(__file__))
@@ -18,6 +17,7 @@ valid_channels = bot_discord_settings['bot_valid_channels']
 bot_description = bot_discord_settings['bot_description']
 bot_token = bot_discord_settings['bot_token']
 bot_reconnect = bot_discord_settings['bot_reconnect']
+
 
 async def get_prefix(bot, message):
     """A callable Prefix for our bot."
@@ -44,14 +44,14 @@ def load_extensions(bot, extensions):
         try:
             bot.load_extension(extension)
             print(f"\t'{extension}' loaded successfully.")
-        except Exception as e:
+        except Exception:
             print(f'\tFailed to load extension {extension}.', file=sys.stderr)
-            traceback.print_exc()
+            traceback.print_exc()  # print traceback without halting.
 
 
 def setup_bot(description):
     bot = commands.Bot(command_prefix=get_prefix, description=description)
-    bot.remove_command('help')
+    # bot.remove_command('help')
     return bot
 
 
