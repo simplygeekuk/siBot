@@ -23,7 +23,7 @@ class Settings:
 
         self.default_config = self._get_config_section('DEFAULT')
         self.default = {}
-        self.default['extensions'] = self._get_section_attrib(self.default_config, 'extensions').split(',')  # noqa: line-too-long
+        # self.default['extensions'] = self._get_section_attrib(self.default_config, 'extensions').split(',')  # noqa: line-too-long
 
         self.discord_config = self._get_config_section('DISCORD')
         self.discord = {}
