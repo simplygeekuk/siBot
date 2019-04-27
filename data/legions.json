@@ -1,17 +1,26 @@
 {
   "description": "The Legion is the basic fighting unit of the game. They are purchased by contract in the Infernal Bazaar, and they offer their services to the highest bidder. Legions are represented on the game board by unique icons that correspond to the player’s icon and border symbol.",
   "info": {
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": ""
+    "level": {
+      "description": "Each Legion has a level, which determines the number of attachment slots that it may receive. Level also influences Resistance Rolls against Rituals that target it. When a Legion destroys an enemy Legion, or when that Legion captures a Place of Power, then it has a chance to increase its level.",
+      "up": "When a Legion levels up, the owner is sent a message in the turn log. The owner must select the desired upgrade to continue. Upgrade bonuses are determined randomly and they consist of increases in combat attributes, loyalty, move points, or new special abilities. The effects of this bonus are applied at the beginning of the processing of the following turn."
+    },  
+    "loyalty": {
+      "description": "The loyalty ranking of a Legion determines its resistance to bribery from enemy players, which are usually committed through Deception Rituals or as the result of an Event. Legions that represent the Archfiend’s personal body guard are considered to have unwavering loyalty and are denoted by the asterisk symbol (i.e., '*'), which means they may never be turned from their original master."
+    },
+    "movement": {
+      "description": "Move points determine how far a Legion may move in any given turn across the game board. For each movement point, the Legion may enter one Canton. If the Legion has a special ability that allows it to move into impassable terrain then it still expends one movement point to do so.",
+      "rules": "The following rules apply to Legion movement:\n- A Canton may only contain one Legion at the end of any turn. A Legion and a Place of Power can never be in the same Canton at the end of a turn. Places of Power never move.\n- Legions may move through Cantons containing other friendly Legions or Places of Power but may never end their turn in the same Canton as another Legion or Place of Power, be it friend or foe.\n- Legions may enter the Canton of a Place of Power to initiate attack, but after battle they are placed in a random adjacent Canton. This obviously applies to a surviving Legion that either wins against the garrison or retreats into a valid Canton with some remaining health. If, for example, you fly a Legion into a Place of Power that is surrounded by enemy Cantons with whom you are not in Vendetta, Blood Feud, Excommunicated, or Blood Lord/Vassal, your Legion is eliminated after combat occurs, even if you win. This happens since there is no valid Canton for this Legion to occupy.\n- Legions may only enter the territory of another player if the correct diplomatic stance exists with that player, namely: Vendetta, Blood Feud, Excommunication, or Blood Vassal/Blood Lord."
+    },
+    "special abilities": "Some Legions have special abilities that grant terrain movement bonuses or advantages in battle. Some abilities may be added to a Legion if that Legion gains a level through battle promotion. Others may come from Events.",
+    "attachments": "Each Legion gains attachment slots based on its level attribute. Attachment slots may be used to place Combat Cards, Praetors, or Evil Artifacts, each of which provides special bonuses to their corresponding Legion.\n- *Legion Level 1-2:* 1 attachment slot.\n- *Legion Level 3-4:* 2 attachment slots.\n- *Legion Level 5-6:* 3 attachment slots.\n- *Legion Level 7+:* 4 attachment slots.\n\n*Note:* Only a Legion’s owner may view the bonus details provided by Combat Cards. The bonuses from any Praetors or Evil Artifacts, however, are viewable by everyone.",
+    "upkeep": "Once contracted, a Legion serves for eternity or until it is destroyed or bribed away by another player. Some rare Legions require a special amount of tribute to be paid each turn in maintenance. The tribute may be paid in advance, but if a turn passes and tribute is not paid, the Legion returns to the Infernal Bazaar. It can, however, be hired by the previous owner, though the contract must be won again through successful bidding.",
+    "training": "Some rare Manuscripts (those found through Tribute or bought in the Infernal Bazaar) allow Legions to upgrade their attributes; done by issuing a correlating order to the Legion through its icon or through the Orders Tab of the Ministerium Interface. The Manuscript is used like a normal Tribute Card to pay for this training, and the upgrade is applied at the beginning of the processing of the following turn."
   },
   "legions": {
     "abyssal striders": {
       "name": "Abyssal Striders",
-      "description": "It is said that a Strider exists for each prideful human. They dwell the excavated mountains north of the river Styx. Striders are small, brawny creatures who show no capacity to learn from others. They are known for ritual dances that often lead to the letting of each others’ blood. Even though they are Hell-dwellers, Striders carry this raw smell of the sea: a scent of fish aging out of water. --Encyclopedia Infernal",
+      "description": "It is said that a Strider exists for each prideful human. They dwell the excavated mountains north of the river Styx. Striders are small, brawny creatures who show no capacity to learn from others. They are known for ritual dances that often lead to the letting of each others’ blood. Even though they are Hell-dwellers, Striders carry this raw smell of the sea: a scent of fish aging out of water.",
       "img": "AbyssalStriders",
       "loyalty": "2",
       "level": "2",
@@ -22,12 +31,11 @@
       "move": "3",
       "specials": {
       },
-	  "upkeep": {
-	  }
+	    "upkeep": ""
     },
     "acheron's butchers": {
       "name": "Acheron's Butchers",
-      "description": "Nothing I have ever seen compares. The hands of Mammon and Balphegor engaged at Sieve Valley. The Bordellos (Balphegor's shock troops) broke through the block of Letheans and were on the cusp of pushing those wallys into discord. From the ground arose this clipping sound of bird beaks and crab claws. Thousands of creatures surfaced. They tore through Bordello's flank with vice-like fists, then seperated those lush bodies like pulled meat. But as fast as they came, they were gone. The Lethean Phalanx simply stood and turned their heads some. -An account from the Battle of Sieve Valley",
+      "description": "Nothing I have ever seen compares. The hands of Mammon and Balphegor engaged at Sieve Valley. The Bordellos (Balphegor's shock troops) broke through the block of Letheans and were on the cusp of pushing those wallys into discord. From the ground arose this clipping sound of bird beaks and crab claws. Thousands of creatures surfaced. They tore through Bordello's flank with vice-like fists, then separated those lush bodies like pulled meat. But as fast as they came, they were gone. The Lethean Phalanx simply stood and turned their heads some.",
       "img": "AcheronsButchers",
       "loyalty": "2",
       "level": "2",
@@ -38,12 +46,27 @@
       "move": "2",
       "specials": {
       },
-	  "upkeep": {
-	  }
+	  "upkeep": ""
+    },
+    "fulminata": {
+      "name": "Fulminata",
+      "description": "O' mighty emperor, hear the thunder of our shields!  Witness the flash of our spears!  We will stand by your side through the darkest of hours.  Our duty is to serve. We have marched the endless tracts of Hell and pledge our eternal loyalty to your cause.  Send us against your enemies so that we may strike them like a Thunderbolt!",
+      "img": "Fulminata",
+      "loyalty": "3",
+      "level": "3",
+      "hp": "10",
+      "ranged": "4",
+      "melee": "5",
+      "infernal": "4",
+      "move": "2",
+      "specials": {
+        "reinforce": ""
+      },
+	  "upkeep": ""
     },
     "oni's faithful": {
       "name": "Oni's Faithful",
-      "description": "A few rocks moved, then the opened carcass of a demon turned over. A bump in the earth shifted some, almost in a rolling fashion, then moved closer to the cliff’s edge. Once all was quiet, small figures--no bigger than a human child--emerged in numbers too high to count. They came from everywhere with blades unclothed and heads turning side to side. They formed a mass of figures in the field before our city Pandemonium. --From a witness’s account of the first attempt to de-power Lucifer and the city Pandemonium",
+      "description": "A few rocks moved, then the opened carcass of a demon turned over. A bump in the earth shifted some, almost in a rolling fashion, then moved closer to the cliff’s edge. Once all was quiet, small figures--no bigger than a human child--emerged in numbers too high to count. They came from everywhere with blades unclothed and heads turning side to side. They formed a mass of figures in the field before our city Pandemonium.",
       "img": "OniFaithful",
       "loyalty": "3",
       "level": "2",
@@ -54,8 +77,7 @@
       "move": "2",
       "specials": {
       },
-	  "upkeep": {
-	  }
+	  "upkeep": ""
     },
     "ten thousand screaming bastards": {
       "name": "Ten Thousand Screaming Bastards",
@@ -70,8 +92,324 @@
       "move": "3",
       "specials": {
       },
-	  "upkeep": {
-	  }
+	  "upkeep": ""
+    },
+    "the 300": {
+      "name": "The 300",
+      "description": "1 wild boar, 740 lbs; 12 dozen yellow onions, sautéed until aromatic; 9 heads of garlic, diced and then stuffed under game’s skin; the arms and legs of ten thousand slain Persians, minced. Combine minced meat with one-half lb. of basil and one-quarter lb. of sage. Use as stuffing for game. Cook boar until juice runs clear. To taste, sauté remaining minced pieces with olive oil, salt, coriander, and pepper. Serve alongside boar. Garnish with parsley.",
+      "img": "The300",
+      "loyalty": "3",
+      "level": "2",
+      "hp": "8",
+      "ranged": "0",
+      "melee": "6",
+      "infernal": "0",
+      "move": "2",
+      "specials": {
+      },
+	  "upkeep": ""
+    },
+    "the accursed company": {
+      "name": "The Accursed Company",
+      "description": "12,000 men stand in an open field. No sound exists. No rain falls. Only the black banner afore their ranks turns with the breeze. When the man beside the flag-bearer raises his arm, the two front rows walk forward. When he lowers his arm they point their weapons skyward. Soon, the forward group yells. Drums sound from the rear. And the ground opens like chapped skin as the forward troops charge.",
+      "img": "AccursedCompany",
+      "loyalty": "2",
+      "level": "2",
+      "hp": "9",
+      "ranged": "3",
+      "melee": "5",
+      "infernal": "0",
+      "move": "2",
+      "specials": {
+      },
+	  "upkeep": ""
+    },
+    "the adamantium guard": {
+      "name": "The Adamantium Guard",
+      "description": "The mindless mechanical men of the Adamantine Guard were once considered fanciful playthings of no real military value.  For an age following their creation they were toy soldiers paraded in front of a stronghold to delight and astound a debauched festival or victory celebration.  That all changed after the Pandemonic Unionization Act of Mechanical Men was published in the register of the Infernal Conclave.",
+      "img": "PanGuard",
+      "loyalty": "4",
+      "level": "3",
+      "hp": "12",
+      "ranged": "6",
+      "melee": "6",
+      "infernal": "6",
+      "move": "2",
+      "specials": {
+        "reinforce": ""
+      },
+	  "upkeep": ""
+    },
+    "the angelic host": {
+      "name": "The Angelic Host",
+      "description": "The vault of the Infernal Firmament opened suddenly and we were bathed in a light that burned and tormented us. The flood of long repressed memories of our existence before the Great Fall wounded us more than the swords and spears of the Angelic Punishers who must have delighted in our sorry plight as they pursued us without rest until we simply fled in all directions secretly hoping in despair that now would be the time of our unmaking.",
+      "img": "AngelicHost",
+      "loyalty": "10",
+      "level": "7",
+      "hp": "16",
+      "ranged": "10",
+      "melee": "10",
+      "infernal": "0",
+      "move": "5",
+      "specials": {
+        "flying": "5",
+        "infernal resist": "d6",
+        "ai only": ""
+      },
+	  "upkeep": ""
+    },
+    "the bane of the righteous": {
+      "name": "The Bane of the Righteous",
+      "description": "Do not underestimate the effects of these creatures, my dear lord. Your suggested disposal disheartens me. Failure at one’s job does not grant that one the ability to circumvent authority. I may lack the physical means to lean your actions, though I do posses a prowess above strength. As such, I have made this letter public, and I presume you will stay your ground while the Choir works towards a more accommodating solution.",
+      "img": "BaneOfR",
+      "loyalty": "3",
+      "level": "4",
+      "hp": "7",
+      "ranged": "4",
+      "melee": "0",
+      "infernal": "4",
+      "move": "2",
+      "specials": {
+        "flame aura": ""
+      },
+	  "upkeep": ""
+    },
+    "the beast": {
+      "name": "The Beast",
+      "description": "Viridis Extraho, or the Dragon, is a large, multi-headed beast living north of the mountain range flanking the river Hades. He may grow six to eight auxiliary heads depending on the season, his hunger, and the nocturnal migration of dire boars across the Silted Plains. The Dragon has long necks with flat, broad dorsal plates. His horns grow in unique patterns per head, though they generally start at the forehead then follow his spine or begin at his crown then circle his head through mandible and then the throat.",
+      "img": "TheBeast",
+      "loyalty": "2",
+      "level": "3",
+      "hp": "15",
+      "ranged": "0",
+      "melee": "14",
+      "infernal": "10",
+      "move": "2",
+      "specials": {
+        "flying": "3",
+        "ranged last": ""
+      },
+	  "upkeep": "3,0,0,0"
+    },
+    "the burning legion": {
+      "name": "The Burning Legion",
+      "description": "The demons of the Burning Legion are tall, stalwart figures. They carry weapons that exude the demon’s primordial core, a spiritual manifestation of the elements present (i.e. fire, water, earth, metal, and wood) when their lives were removed from the human world. They march in blocks similar to pikemen, but they break rank and charge when their weapons take form. The Burning Legion is best known for the singular eye atop their heads, which allows them to watch the sky as well as the enemies afore.",
+      "img": "BurningLegion",
+      "loyalty": "3",
+      "level": "3",
+      "hp": "8",
+      "ranged": "2",
+      "melee": "4",
+      "infernal": "2",
+      "move": "2",
+      "specials": {
+      },
+	  "upkeep": ""
+    },
+    "the chains of torment": {
+      "name": "The Chains of Torment",
+      "description": "Fighting between the Chains of Torment and the Abyssal Striders have kept both groups from becoming too organized and too orthodox in structure. Proximity is the greatest cause of their dissent. Before Pandamonium’s construction, Mammon argued for the excavation of minerals from the mountain range which the Chains and Striders occupy. Even though these resources are well spent, both groups refuse to subside because of the historical role each have played in the acquisition of those metropolitan constituents.",
+      "img": "ChainsTorment",
+      "loyalty": "2",
+      "level": "2",
+      "hp": "8",
+      "ranged": "2",
+      "melee": "5",
+      "infernal": "0",
+      "move": "2",
+      "specials": {
+      },
+	  "upkeep": ""
+    },
+    "the creeping doom": {
+      "name": "The Creeping Doom",
+      "description": "CREEP verb 1. Move slowly, esp. with care, but primarily for the purpose of stealth. as adj. CREEPING 1. Movement related to the surface of the ground by a systematic means of extending its own mass, possibly to the effects of an overwhelming number. DOOM noun 1. Destruction or demise. 2. In the archaic Christian belief, doom is synonymous with the Last Judgement. To this effect we plan our assault on mankind.",
+      "img": "CreepingDoom",
+      "loyalty": "2",
+      "level": "3",
+      "hp": "7",
+      "ranged": "0",
+      "melee": "10",
+      "infernal": "0",
+      "move": "2",
+      "specials": {
+        "ranged resist": "3",
+        "infernal resist": "3"
+      },
+	  "upkeep": ""
+    },
+    "the crimson reapers": {
+      "name": "The Crimson Reapers",
+      "description": "They were slender, well-built humanoids. They stood at the lip of the crater, consuming a quarter of its mile-wide circumference. They rhythmically thumped their weapons against the shoulder of their free hand, but carrying sickles and large hammers pounded the earth instead. When the wind turned, I could smell soured cabbage. It was a familiar odor, but one I associated with the wet, cobbled streets of Pandemonium rather than that of an open field. None of those red beasts spoke. Nor did any of mine.",
+      "img": "Reapers",
+      "loyalty": "4",
+      "level": "2",
+      "hp": "9",
+      "ranged": "0",
+      "melee": "2",
+      "infernal": "7",
+      "move": "2",
+      "specials": {
+      },
+	  "upkeep": ""
+    },
+    "the cthonian crawlers": {
+      "name": "The Cthonian Crawlers",
+      "description": "They have burrowed holes through my cellar and the beams supporting my chamber. I have seen two of them in the dark: small shiny eyes; long, fleshy torsos; tentacled, or wired with the legs of a spider. Their skin shimmers from the light of my study. They click some with their mouths, and I hear the sound of earth rubbing itself. They have made no attempt to ascend the stairs, and for that I feel no fear. My liege, grant me the manpower to exterminate these beasts before they grow too numerous.",
+      "img": "CCrawlers",
+      "loyalty": "3",
+      "level": "2",
+      "hp": "8",
+      "ranged": "2",
+      "melee": "4",
+      "infernal": "0",
+      "move": "2",
+      "specials": {
+        "mountain walk": ""
+      },
+	  "upkeep": ""
+    },
+    "the dark stalkers": {
+      "name": "The Dark Stalkers",
+      "description": "They are huge! Not Typhon huge, but huge nonetheless. I have seen one pluck a beast from the ground and fold its squirming body into the cavity between its tentacles. I have seen them brush against rock and brimstone, causing these ancient protrusions to crumble as if earth over-baked. From their bodies emit this low, grinding sound similar to that of tectonic adjusting. And from the bridge of their nose comes something that distorts the air, causing any creature within its path to stop and look in wonder.",
+      "img": "DarkStalkers",
+      "loyalty": "2",
+      "level": "2",
+      "hp": "10",
+      "ranged": "4",
+      "melee": "3",
+      "infernal": "2",
+      "move": "2",
+      "specials": {
+      },
+	  "upkeep": ""
+    },
+    "the darkwing legion": {
+      "name": "The Darkwing Legion",
+      "description": "Day 1: A severed head from Viridis Extraho lies in Sieve Valley. I've pulled it behind a rock, perhaps it's of value. It's enormous. Probably eighty-five in weight. Must move it home. Day 3: Head shows no decomposition. Neck is shallow and soft, but it's liquid does not drain from its cut. Fascinating. Day 7: Neck seems longer than I remember. I've devised a system to move it. Can't use sorcery for fear of others. Must choose hours wisely. Day 8: I swear I saw the eyes look skyward then close. What to do?",
+      "img": "DarkWingLegion",
+      "loyalty": "4",
+      "level": "3",
+      "hp": "9",
+      "ranged": "5",
+      "melee": "5",
+      "infernal": "1",
+      "move": "2",
+      "specials": {
+        "flying": "3"
+      },
+	  "upkeep": ""
+    },
+    "the defilers": {
+      "name": "The Defilers",
+      "description": "They are responsible for the land: jaunty and bare, like the hind of an old, lost dog. And for that reason alone we must employ their services against Mammon and his own. Let us spread this disease which we call Infertile Mother. Let us spread her sterile belly across Styx and into the southern mountains that hold his riches, for there’s no reason he should prosper and not us. Inequality divides our kind.",
+      "img": "TheDefilers",
+      "loyalty": "2",
+      "level": "2",
+      "hp": "9",
+      "ranged": "3",
+      "melee": "5",
+      "infernal": "0",
+      "move": "2",
+      "specials": {
+      },
+	  "upkeep": ""
+    },
+    "the devoted of lucifer": {
+      "name": "The Devoted of Lucifer",
+      "description": "These are the fallen angels who broke the chains of the Lake of Fire then ascended to Earth with Lucifer. They are the group from which most Arch Fiends ascend (the other being the Lords of the Pit), and their reputation precedes them within Hell and the various literatures of mankind. They were the original angels to loose their wings, they are stubborn to all authority save the Prince, and they prefer to mettle with humans rather than fellow Hell-dwellers. Pride precedes them as they consider themselves superior to all other demonic creatures, particularly the Vile Apostates.",
+      "img": "DevotedLucifer",
+      "loyalty": "4",
+      "level": "3",
+      "hp": "10",
+      "ranged": "4",
+      "melee": "4",
+      "infernal": "0",
+      "move": "2",
+      "specials": {
+        "infernal resist": "2"
+      },
+	  "upkeep": ""
+    },
+    "the devourer": {
+      "name": "The Devourer",
+      "description": "These are the fallen angels who broke the chains of the Lake of Fire then ascended to Earth with Lucifer. They are the group from which most Arch Fiends ascend (the other being the Lords of the Pit), and their reputation precedes them within Hell and the various literatures of mankind. They were the original angels to loose their wings, they are stubborn to all authority save the Prince, and they prefer to mettle with humans rather than fellow Hell-dwellers. Pride precedes them as they consider themselves superior to all other demonic creatures, particularly the Vile Apostates.",
+      "img": "TheDevourer",
+      "loyalty": "9",
+      "level": "7",
+      "hp": "18",
+      "ranged": "8",
+      "melee": "6",
+      "infernal": "10",
+      "move": "1",
+      "specials": {
+        "devour": "",
+        "demon envy": ""
+      },
+	  "upkeep": "2,2,2,2"
+    },
+    "the fallen": {
+      "name": "The Fallen",
+      "description": "The men of the Fallen walked between the pillars outside the marble temple. They were tall, they numbered 5,000, and they bore the faces of human men. To an outsider, this band would have looked like a patchwork of righteous warriors spanning the length of a millennia, for in their hands were the byproducts of metal refined to different functions: gladii, claymores, a few harquebuses, and pikes. But within Hell, the normalcy of their faces created a falseness with which no observer could feel at ease.",
+      "img": "TheFallen",
+      "loyalty": "2",
+      "level": "2",
+      "hp": "10",
+      "ranged": "0",
+      "melee": "6",
+      "infernal": "0",
+      "move": "2",
+      "specials": {
+      },
+	  "upkeep": ""
+    },
+    "the frozen lords": {
+      "name": "The Frozen Lords",
+      "description": "From the bed of a lake beasts without fire will rise. When our numbers fight each other, they will gather the sickle and the scale. We will drink the sulphured liquid they bring, and half of us will harden to stone. The others will be left to re-build: a new tower in place of the old.",
+      "img": "FrozenLords",
+      "loyalty": "2",
+      "level": "3",
+      "hp": "9",
+      "ranged": "5",
+      "melee": "5",
+      "infernal": "0",
+      "move": "2",
+      "specials": {
+        "infernal vulnerability": "2"
+      },
+	  "upkeep": ""
+    },
+    "the gorgons": {
+      "name": "The Gorgons",
+      "description": "From our womb sprays a litter of snake-beasts. They are the devourers of books and scrolls, ink and toads. Blackened and foul they are, but not us. We are women. We are the mothers of one hundred thousand sons, and we are made of dewy flesh.",
+      "img": "TheGorgons",
+      "loyalty": "2",
+      "level": "3",
+      "hp": "10",
+      "ranged": "10",
+      "melee": "0",
+      "infernal": "9",
+      "move": "2",
+      "specials": {
+        "melee resist": "3",
+        "melee last": ""
+      },
+	  "upkeep": "0,0,0,2"
+    },
+    "the grinning legion": {
+      "name": "The Grinning Legion",
+      "description": "Most members of the Grinning Legion bear ivory or onyx horns that stud their faces around the nose or across the forehead. While possessing superhuman strength, they are considered weaker than most other demonic legions per capita. Their prowess, though, comes from volume. They are 500,000 strong, they bite through terrain which impedes movement, and they pile themselves afore structures so that their collective mass may overcome. Their name comes not from their smiles, but from the Cheshire cut that sits below the breast. The Grinning Legion were originally called Red Moons until the Nine Circles War.",
+      "img": "GrinningLegion",
+      "loyalty": "4",
+      "level": "2",
+      "hp": "11",
+      "ranged": "3",
+      "melee": "6",
+      "infernal": "0",
+      "move": "2",
+      "specials": {
+      },
+	  "upkeep": ""
     }
   }
 }
