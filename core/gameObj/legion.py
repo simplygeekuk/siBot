@@ -69,9 +69,9 @@ class Legion:
             ichor = resources[1]
             hellfire = resources[2]
             darkness = resources[3]
-            self.embed.add_field(name="Upkeep",
-                                 value="Souls: " + souls +
-                                 ", Ichor: " + ichor +
-                                 ", Hellfire: " + hellfire +
-                                 ", Darkness: " + darkness)
+            self._embed.add_field(name="Upkeep",
+                                  value="Souls: " + souls +
+                                  ", Ichor: " + ichor +
+                                  ", Hellfire: " + hellfire +
+                                  ", Darkness: " + darkness)
         return self._embed
