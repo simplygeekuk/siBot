@@ -38,7 +38,7 @@
   "praetors": {
     "abraxas": {
       "name": "Abraxas",
-      "description": "Abraxas is a crowd favorite in the 'Infernal Arena of Pandemonium'. Despite the many honors that he has won for those who would command his service, the patron soon finds that a sense of unease regarding Abraxas slowly creeps into being. He knows something. You know from merely looking at him that he knows something that you do not. It grates. – From 'A History of The Infernal Arena' vol. ii",
+      "description": "Abraxas is a crowd favorite in the 'Infernal Arena of Pandemonium'. Despite the many honors that he has won for those who would command his service, the patron soon finds that a sense of unease regarding Abraxas slowly creeps into being. He knows something. You know from merely looking at him that he knows something that you do not. It grates.",
       "img": "Abraxas",
       "loyalty": "3",
       "level": "1",
@@ -54,7 +54,7 @@
     },
     "astarte": {
       "name": "Astarte",
-      "description": "I still see her in the streets of Pandemonium. Three mornings ago she walked alone and looked over her shoulder at me in the window above. With time, I knew she would notice. I then saw her the following evening, but this time near the point where the five paths meet: the area where vagabonds sleep and the wicked come out to play. She had someone on her arm and she pulled close to his form. I was once one of those companions. I will leave it at that. --From the diary of Suffragan Pazul",
+      "description": "I still see her in the streets of Pandemonium. Three mornings ago she walked alone and looked over her shoulder at me in the window above. With time, I knew she would notice. I then saw her the following evening, but this time near the point where the five paths meet: the area where vagabonds sleep and the wicked come out to play. She had someone on her arm and she pulled close to his form. I was once one of those companions. I will leave it at that.",
       "img": "Astarte",
       "loyalty": "3",
       "level": "3",
@@ -70,7 +70,7 @@
     },
     "baraqiel": {
       "name": "Baraqiel",
-      "description": "'He descended the heavens for coitus with mortals.' 'Have you seen their softer gender? I blame him not.' 'Nor I, moments of the flesh are reaped now; other things may never fruit. But at some point, dear Alfry, one must put aside transit things for the betterment of something larger.' 'Of what do you speak?' 'I speak of our unification and the spreading of discontent against our former father.' 'Is not Baraqiel’s exploit the betterment of our way?' 'I’m afraid not. One best undermines strong foes through organization. Baraqiel’s exploits are elementary indulgences.' --From 'A Treatise on Reformation, Presented in Dialogue'",
+      "description": "'He descended the heavens for coitus with mortals.' 'Have you seen their softer gender? I blame him not.' 'Nor I, moments of the flesh are reaped now; other things may never fruit. But at some point, dear Alfry, one must put aside transit things for the betterment of something larger.' 'Of what do you speak?' 'I speak of our unification and the spreading of discontent against our former father.' 'Is not Baraqiel’s exploit the betterment of our way?' 'I’m afraid not. One best undermines strong foes through organization. Baraqiel’s exploits are elementary indulgences.'",
       "img": "Baraqiel",
       "loyalty": "3",
       "level": "2",
@@ -86,7 +86,7 @@
     },
     "barbatos": {
       "name": "Barbatos",
-      "description": "I do not harbor doubts about his loyalty. I merely note that he has possessed a seemingly preternatural ability to pick the winning side in any and all matters of political dispute. And this is quite contrary to his nature before our terrible fall from servitude in enlightened chains at the foot of the Tyrant’s Throne. It bears further rumination. --Private letter from Magistrate Traxagonis to the Black Ring",
+      "description": "I do not harbor doubts about his loyalty. I merely note that he has possessed a seemingly preternatural ability to pick the winning side in any and all matters of political dispute. And this is quite contrary to his nature before our terrible fall from servitude in enlightened chains at the foot of the Tyrant’s Throne. It bears further rumination.",
       "img": "Barbatos",
       "loyalty": "2",
       "level": "4",
@@ -102,7 +102,7 @@
     },
     "bifrons": {
       "name": "Bifrons",
-      "description": "Bifrons. Male. Roughly seventy-eight years younger than Adam. Currently holds the title Earl. Seems to have a passing fascination with transmuting human corpses into various forms as well as transporting them to other, non-orthodox places such as a chair or in a human’s bedchambers. Is a student of alchemy and has written a philosophical work on applying sciences and arts towards the betterment of the Dark Prince. Seems to prefer the form of beast over his other public shape: a man. --Private notes by Archivist Epistemol for an uncompleted genealogical and political history of Hell",
+      "description": "Bifrons. Male. Roughly seventy-eight years younger than Adam. Currently holds the title Earl. Seems to have a passing fascination with transmuting human corpses into various forms as well as transporting them to other, non-orthodox places such as a chair or in a human’s bedchambers. Is a student of alchemy and has written a philosophical work on applying sciences and arts towards the betterment of the Dark Prince. Seems to prefer the form of beast over his other public shape: a man.",
       "img": "Bifrons",
       "loyalty": "2",
       "level": "3",
@@ -118,7 +118,7 @@
     },
     "bune": {
       "name": "Bune",
-      "description": "It seems as if Bune sours over our arrangements. I have reason to believe he positions himself for the responsibilities that you and I share. What more does he expect? It is not that he lacks the manpower to accomplish such feat; he lacks the fortitude and spiritual constitution to rub horns with a member of the High Peerage. I fear nothing. To me, he is powdered bone. However, Bifrons, I suggest you watch your own. --Private letter from Murmur to Bifrons, transcribed by Murmur’s private scrivener, Lulas",
+      "description": "It seems as if Bune sours over our arrangements. I have reason to believe he positions himself for the responsibilities that you and I share. What more does he expect? It is not that he lacks the manpower to accomplish such feat; he lacks the fortitude and spiritual constitution to rub horns with a member of the High Peerage. I fear nothing. To me, he is powdered bone. However, Bifrons, I suggest you watch your own.",
       "img": "Bune",
       "loyalty": "3",
       "level": "3",
@@ -134,7 +134,7 @@
     },
     "caim": {
       "name": "Caim",
-      "description": "The power of all mortal Shamans’ would be greatly diminished were it not for the teachings of Caim.  It is the lore of Caim that allows a mortal to bind a lesser spirit and bend it to his will.  Caim's bargain with any mortal brings with it the overwhelming desire to dominate. Caim's teaching is to not merely push and pull but rather to grip with an iron will the weak and disembodied. -- From the Book of Caim",
+      "description": "The power of all mortal Shamans’ would be greatly diminished were it not for the teachings of Caim.  It is the lore of Caim that allows a mortal to bind a lesser spirit and bend it to his will.  Caim's bargain with any mortal brings with it the overwhelming desire to dominate. Caim's teaching is to not merely push and pull but rather to grip with an iron will the weak and disembodied.",
       "img": "Caim",
       "loyalty": "4",
       "level": "4",
@@ -150,7 +150,7 @@
     },
     "decarabia": {
       "name": "Decarabia",
-      "description": "The Fulminatas moved forward in perfect formation following closely behind the mighty Decarabia. The Walls of Nasgulrawata were breached with ease by his great horn. Walls that had withstood the siege of a millennium crumbled with a sickening groan. The damned within were roasted and consumed in the following revel that lasted for years. – From 'An Examination of Siege Tactics in the Infernal Pit' vol. xii",
+      "description": "The Fulminatas moved forward in perfect formation following closely behind the mighty Decarabia. The Walls of Nasgulrawata were breached with ease by his great horn. Walls that had withstood the siege of a millennium crumbled with a sickening groan. The damned within were roasted and consumed in the following revel that lasted for years.",
       "img": "Decarabia",
       "loyalty": "3",
       "level": "4",
@@ -166,7 +166,7 @@
     },
     "eligos": {
       "name": "Eligos",
-      "description": "I have received thirty-four letters from Bezel since we last spoke. He seems greatly concerned with a prophesied uprising amongst demons within the gates of Pandemonium. And he, of course, is fishing for related prophecies that I may hold. Of most concern to me is his lack of explanation for these images. He speaks reservedly and he seems to hold many secrets close to his chest. I will deploy eyes and ears to unfold these intentions. --A letter found outside Beelzebub’s chamber, signed by Great Duke Eligos but without an addressee",
+      "description": "I have received thirty-four letters from Bezel since we last spoke. He seems greatly concerned with a prophesied uprising amongst demons within the gates of Pandemonium. And he, of course, is fishing for related prophecies that I may hold. Of most concern to me is his lack of explanation for these images. He speaks reservedly and he seems to hold many secrets close to his chest. I will deploy eyes and ears to unfold these intentions.",
       "img": "Eligos",
       "loyalty": "4",
       "level": "3",
@@ -181,7 +181,7 @@
     },
     "focalor": {
       "name": "Focalor",
-      "description": "I found this letter two days ago. It reads: 'Focalor has never fully recovered from the first millennium after his spiritual eviction. He lacks his previous power to ruin those tiny little ships that mankind built off their lust for new lands. He is weathered, and I think it best to handle him through quick and fierce justice. Be a woman of the twilight. Lure him into seclusion so I may strike him down and join you as a greater demon.' It was written in the hand of my suffragan. --From the diary of Bishop Bezel",
+      "description": "I found this letter two days ago. It reads: 'Focalor has never fully recovered from the first millennium after his spiritual eviction. He lacks his previous power to ruin those tiny little ships that mankind built off their lust for new lands. He is weathered, and I think it best to handle him through quick and fierce justice. Be a woman of the twilight. Lure him into seclusion so I may strike him down and join you as a greater demon.' It was written in the hand of my suffragan.",
       "img": "Focalor",
       "loyalty": "3",
       "level": "3",
@@ -197,7 +197,7 @@
     },
     "furfur": {
       "name": "Furfur",
-      "description": "What we lack in Lucifer’s Choir is a comprehensive understanding of love and its effects on human subjects. Manipulation through deception, our marquee weapon in corrupting the Image, requires the deconstruction and examination of our subject across all plains: physical, spiritual, mental, emotional. I write for Furfur’s admittance into the Choir based on his works with human emotions and sexual gratification. No more shall war, famine, and disease be our main weapons in redirecting humans away from their creator. Other, more fruit-bearing routes allow equal travel. --Private letter from Bishop Bezel to the Choir",
+      "description": "What we lack in Lucifer’s Choir is a comprehensive understanding of love and its effects on human subjects. Manipulation through deception, our marquee weapon in corrupting the Image, requires the deconstruction and examination of our subject across all plains: physical, spiritual, mental, emotional. I write for Furfur’s admittance into the Choir based on his works with human emotions and sexual gratification. No more shall war, famine, and disease be our main weapons in redirecting humans away from their creator. Other, more fruit-bearing routes allow equal travel.",
       "img": "Furfur",
       "loyalty": "3",
       "level": "2",
@@ -213,7 +213,7 @@
     },
     "gusion": {
       "name": "Gusion",
-      "description": "Duke Gusion has managed once again to confound his rivals and now seeks to manipulate, connive and worm his way into a position of strength within the lesser chambers of the Conclave.  Do not be fooled by his favored form of a giant ape.  There is a cold calculating intellect behind the frequent outbursts of rage and chest beating. I am convinced however that he serves no cause but his own and thus could be of some use if his interests were to align with your lordship's. --Report from Botis the Enslaved",
+      "description": "Duke Gusion has managed once again to confound his rivals and now seeks to manipulate, connive and worm his way into a position of strength within the lesser chambers of the Conclave.  Do not be fooled by his favored form of a giant ape.  There is a cold calculating intellect behind the frequent outbursts of rage and chest beating. I am convinced however that he serves no cause but his own and thus could be of some use if his interests were to align with your lordship's.",
       "img": "Gusion",
       "loyalty": "2",
       "level": "4",
@@ -229,7 +229,7 @@
     },
     "haagenti": {
       "name": "Haagenti",
-      "description": "I see a figure with a bullish head and feathered wings who walks because his body's thickness belies flight. He is sooty. He drinks his poison with a steady hand, which says much because his body appears weathered and carries the cuts of a hundred-thousand years. I see this figure standing atop a golden chair that sits at the peak of a bronze pyramid. I see him tossing arms, legs, and a head or two from the top: parts of those who stood in his path. --Vision of Bishop Bezel",
+      "description": "I see a figure with a bullish head and feathered wings who walks because his body's thickness belies flight. He is sooty. He drinks his poison with a steady hand, which says much because his body appears weathered and carries the cuts of a hundred-thousand years. I see this figure standing atop a golden chair that sits at the peak of a bronze pyramid. I see him tossing arms, legs, and a head or two from the top: parts of those who stood in his path.",
       "img": "Haagenti",
       "loyalty": "2",
       "level": "3",
@@ -244,7 +244,7 @@
     },
     "malacoda": {
       "name": "Malacoda",
-      "description": "It’s quite simple actually: Fly up to the rock, pluck a soul from the bounty, drop it to the pit. They make a delightful sound when they splash and most never surface for breath. A few do, however, and I dispatch someone to handle them accordingly. Yes, it’s redundant, but I find ways to keep morale. Occasionally we play with them in the air over the pit. Simple fun, really. A small game of catch. Nothing to curb effectiveness. --From an informal report written by the hand of Malacoda, submitted to his superior, Principa",
+      "description": "It’s quite simple actually: Fly up to the rock, pluck a soul from the bounty, drop it to the pit. They make a delightful sound when they splash and most never surface for breath. A few do, however, and I dispatch someone to handle them accordingly. Yes, it’s redundant, but I find ways to keep morale. Occasionally we play with them in the air over the pit. Simple fun, really. A small game of catch. Nothing to curb effectiveness.",
       "img": "Malacoda",
       "loyalty": "3",
       "level": "3",
@@ -260,7 +260,7 @@
     },
     "morax": {
       "name": "Morax",
-      "description": "Morax has 'befriended' many a mortal and in the process wrought torment laced with delicious irony. One of his favorite gags is to grant the tormented a cursed immortality that sends the victim on an endless quest to find their true identity while hounded by recurring amnesia. – From 'The Nature of Man' vol. x",
+      "description": "Morax has 'befriended' many a mortal and in the process wrought torment laced with delicious irony. One of his favorite gags is to grant the tormented a cursed immortality that sends the victim on an endless quest to find their true identity while hounded by recurring amnesia.",
       "img": "Morax",
       "loyalty": "1",
       "level": "4",
@@ -276,7 +276,7 @@
     },
     "mulciber": {
       "name": "Mulciber",
-      "description": "It was Haruspex Pilanza who selected the site for Pandemonium, however Mulciber lead its construction. Pandemonium was built from stone, iron, and unrefined sins collected from the time of Adam and Eve until the death of their great-grandchildren. Mulciber crafted Pandemonium’s design and saw to its completion through his establishment of the Order of Infernal Engineers, an organization that would later make several technological advances for life in our world. Mulciber’s chief subordinate engineer was Pontis. Pontis would later design and construct The Testament of Tyrants. --Encyclopedia Infernal",
+      "description": "It was Haruspex Pilanza who selected the site for Pandemonium, however Mulciber lead its construction. Pandemonium was built from stone, iron, and unrefined sins collected from the time of Adam and Eve until the death of their great-grandchildren. Mulciber crafted Pandemonium’s design and saw to its completion through his establishment of the Order of Infernal Engineers, an organization that would later make several technological advances for life in our world. Mulciber’s chief subordinate engineer was Pontis. Pontis would later design and construct The Testament of Tyrants.",
       "img": "Mulciber",
       "loyalty": "4",
       "level": "2",
@@ -292,7 +292,7 @@
     },
     "naphula": {
       "name": "Naphula",
-      "description": "Naphula harbors resentments of a spurious nature regarding her recent demotion. It has been explained ad nauseum that research in the philosophical arts concerning the nature of predestiny and the symbiotic relationship between good and evil are not productive given our present plight – and yet she persists. --Private letter from Vulgati the Wise to Infernal Professorium",
+      "description": "Naphula harbors resentments of a spurious nature regarding her recent demotion. It has been explained ad nauseum that research in the philosophical arts concerning the nature of predestiny and the symbiotic relationship between good and evil are not productive given our present plight – and yet she persists.",
       "img": "Naphula",
       "loyalty": "2",
       "level": "4",
@@ -309,7 +309,7 @@
     },
     "orias": {
       "name": "Orias",
-      "description": "Orias desires to build a string of watchtowers on the lip of a chasm that divides the Great Empty. He claims that another house might summon some strength from its boundless depths. I suspect some other veiled motive but can not offer as yet any evidence that he is anything other than a useless soul glutton. --Private letter from House Master Oculus to Asmodeus",
+      "description": "Orias desires to build a string of watchtowers on the lip of a chasm that divides the Great Empty. He claims that another house might summon some strength from its boundless depths. I suspect some other veiled motive but can not offer as yet any evidence that he is anything other than a useless soul glutton.",
       "img": "Orias",
       "loyalty": "3",
       "level": "4",
@@ -325,7 +325,7 @@
     },
     "phenex": {
       "name": "Phenex",
-      "description": "He takes the form of a fiery bird and he wields the voice of a choir boy. Give him no ear, for his songs mislead. But bid him take the form of a man, and he will show you his truer image. From that image he offers no harm and he provides you with knowledge in poetics and ocular sciences. Take his words to heart in this latter form: he is the least misleading of Hell’s gentlefolk. --From 'The Pseudomonarchia Daemonum'",
+      "description": "He takes the form of a fiery bird and he wields the voice of a choir boy. Give him no ear, for his songs mislead. But bid him take the form of a man, and he will show you his truer image. From that image he offers no harm and he provides you with knowledge in poetics and ocular sciences. Take his words to heart in this latter form: he is the least misleading of Hell’s gentlefolk.",
       "img": "Phenex",
       "loyalty": "3",
       "level": "2",
@@ -341,7 +341,7 @@
     },
     "raum": {
       "name": "Raum",
-      "description": "Keep your treasures locked away: Raum is who will take them. When a tyrant’s veins expand new lands, Raum is there to rape it. The weaker folk are rotten seeds that which perfume the good ones. Throw them out with the ash and let the healthy prosper. --From an untitled letter written by an anonymous hand, slipped into 'The Pseudomonarchia Daemonum' between pages 78 and 79",
+      "description": "Keep your treasures locked away: Raum is who will take them. When a tyrant’s veins expand new lands, Raum is there to rape it. The weaker folk are rotten seeds that which perfume the good ones. Throw them out with the ash and let the healthy prosper.",
       "img": "Raum",
       "loyalty": "4",
       "level": "3",
@@ -357,7 +357,7 @@
     },
     "temeluchas": {
       "name": "Temeluchas",
-      "description": "Stand aside: for he, Temeluchas, is the vessel chosen to bring my wrath. When my mouth speaks, Temeluchas will be the cudgel that strikes the heads of my enemies. When my mouth falls silent, he will seek out those I shall speak against next. He will wear my seal upon his breast and will carry my authority over all the Underworld. He is the sharpness of my tooth and the broad muscles of my tail. --Transcript of an oration by Lucifer on occasion of Temeluchas’s assent to Lucifer’s Private Council, translated by Suffragan Pazul",
+      "description": "Stand aside: for he, Temeluchas, is the vessel chosen to bring my wrath. When my mouth speaks, Temeluchas will be the cudgel that strikes the heads of my enemies. When my mouth falls silent, he will seek out those I shall speak against next. He will wear my seal upon his breast and will carry my authority over all the Underworld. He is the sharpness of my tooth and the broad muscles of my tail.",
       "img": "Temeluchas",
       "loyalty": "3",
       "level": "2",
@@ -373,7 +373,7 @@
     },
     "thammuz": {
       "name": "Thammuz",
-      "description": "Correction of misdeeds are not for the benefit of the misdoer; they are for the benefit of the general public so that they, as a whole, may wean away from actions against the state like a baby pulled from his mother’s breast. --From 'Direction, Influence, and the Masses' by Thammuz",
+      "description": "Correction of misdeeds are not for the benefit of the misdoer; they are for the benefit of the general public so that they, as a whole, may wean away from actions against the state like a baby pulled from his mother’s breast.",
       "img": "Thammuz",
       "loyalty": "4",
       "level": "2",
@@ -389,7 +389,7 @@
     },
     "valac": {
       "name": "Valac",
-      "description": "Valac ascended from the Illuminatus to become a Greater Demon and Infernal Investigator for Lord Lucifer’s Choir. Occasionally he is known to take the image of a small waif, though sometimes, particularly when piqued, he takes the form of a man. It is here that his skin enlivens and spreads outwards like flat, fleshy tentacles. They push against the walls, floors, and chairs--any object--and they engulf these things until they are obscured from sight. --Encyclopedia Infernal",
+      "description": "Valac ascended from the Illuminatus to become a Greater Demon and Infernal Investigator for Lord Lucifer’s Choir. Occasionally he is known to take the image of a small waif, though sometimes, particularly when piqued, he takes the form of a man. It is here that his skin enlivens and spreads outwards like flat, fleshy tentacles. They push against the walls, floors, and chairs--any object--and they engulf these things until they are obscured from sight.",
       "img": "Valac",
       "loyalty": "3",
       "level": "3",
@@ -406,7 +406,7 @@
     },
     "valefar": {
       "name": "Valefar",
-      "description": "Valefar has offered me seclusion until this unrest has passed. I may accept his offer, but I do so under knowledge of the rumors against him. It is said that he walked Traanyor to the mouth of Tartarus and submitted his old friend to its service--all to rid Traanyor’s accumulation of Choir favor. Valefar seems the most likely person to turn on a friend, but perhaps that is why I may now trust him. I leave in haste. --A note found on Bishop Bezel’s desk next to an unlit candle, a wax stick, and the bishop’s seal",
+      "description": "Valefar has offered me seclusion until this unrest has passed. I may accept his offer, but I do so under knowledge of the rumors against him. It is said that he walked Traanyor to the mouth of Tartarus and submitted his old friend to its service--all to rid Traanyor’s accumulation of Choir favor. Valefar seems the most likely person to turn on a friend, but perhaps that is why I may now trust him. I leave in haste.",
       "img": "Valefar",
       "loyalty": "2",
       "level": "3",
@@ -423,7 +423,7 @@
     },
     "vassago": {
       "name": "Vassago",
-      "description": "The conjurer who evokes Vassago's spirit will receive a being of passive nature who provides prophetic insight to his master. Vassago governs twenty-nine legions of spirits and holds title as a lower prince of the Bowels. His interests are unconventional; they manifest through either symbols of restriction or symbols of governed but stylized pleasure. His words can be trusted as long as his form remains in the conjuring circle. --From 'The Pseudomonarchia Daemonum'",
+      "description": "The conjurer who evokes Vassago's spirit will receive a being of passive nature who provides prophetic insight to his master. Vassago governs twenty-nine legions of spirits and holds title as a lower prince of the Bowels. His interests are unconventional; they manifest through either symbols of restriction or symbols of governed but stylized pleasure. His words can be trusted as long as his form remains in the conjuring circle.",
       "img": "Vassago",
       "loyalty": "3",
       "level": "2",
@@ -439,7 +439,7 @@
     },
     "xaphan": {
       "name": "Xaphan",
-      "description": "Xaphan’s behavior reveals a counter productive penchant for cruelty towards subordinates. Directed to storm the walls of Vas during the First Rectification of the Vasdranai, Xaphan forced his Lieutenants to sever their weapon hands and summarily decimated his ranks before a single demon had advanced even a single step towards the battlements – vowing loudly that the price of failure would be far worse. – From the 'History of the Rectification Wars' vol. i",
+      "description": "Xaphan’s behavior reveals a counter productive penchant for cruelty towards subordinates. Directed to storm the walls of Vas during the First Rectification of the Vasdranai, Xaphan forced his Lieutenants to sever their weapon hands and summarily decimated his ranks before a single demon had advanced even a single step towards the battlements – vowing loudly that the price of failure would be far worse.",
       "img": "Xaphan",
       "loyalty": "4",
       "level": "4",
@@ -471,7 +471,7 @@
     },
     "zuul": {
       "name": "Zuul",
-      "description": "Rx. One hundred minds under her control. Nine lovers lost to the sea. Eight doors from which we take our choice. Four thousand corpses exhumed then freed. It is with these things that Zuul stakes claim on heads and on hearts and on purity. Let her breasts nurse no other. Only one offspring for she. --From 'A Wayward Cause' by Sister Cui",
+      "description": "Rx. One hundred minds under her control. Nine lovers lost to the sea. Eight doors from which we take our choice. Four thousand corpses exhumed then freed. It is with these things that Zuul stakes claim on heads and on hearts and on purity. Let her breasts nurse no other. Only one offspring for she.",
       "img": "Zuul",
       "loyalty": "2",
       "level": "3",
@@ -487,7 +487,7 @@
     },
     "the butcher": {
       "name": "The Butcher",
-      "description": "Bring me fresh meat! Bring me the meat! One can only marvel at his enthusiasm for dispatching the unworthy to Tartarean oblivion. Besides the aroma of freshly spilled Ichor, the smell of fear seeps from the floor of the Grand Arena as the Butcher plies his trade. Occasionally you hear a howl from the holding pens below but mostly the soft whimpering of those waiting for their turn with the Butcher. -- From 'An Account of Philotormentius at the Grand Arena' vol. i",
+      "description": "Bring me fresh meat! Bring me the meat! One can only marvel at his enthusiasm for dispatching the unworthy to Tartarean oblivion. Besides the aroma of freshly spilled Ichor, the smell of fear seeps from the floor of the Grand Arena as the Butcher plies his trade. Occasionally you hear a howl from the holding pens below but mostly the soft whimpering of those waiting for their turn with the Butcher.",
       "img": "Butcher",
       "loyalty": "3",
       "level": "5",
@@ -502,7 +502,7 @@
     },
     "the queen of the damned": {
       "name": "The Queen of the Damned",
-      "description": "She wields two blades that move with such rapidity that the eye can not discern one from the other. Nay only a shimmering haze is apparent before the pointed screech of pain is elicited from her opponent. She does not dispatch quickly preferring to bleed her antagonist slowly and seems to draw strength from the subtle agonizing decline in strength that follows each surgical cut. Doom by a thousand cuts has never been more real in the Grand Arena than when the Queen performs her ritual dance. - From 'An Account of Philotormentius at the Grand Arena' vol. ii",
+      "description": "She wields two blades that move with such rapidity that the eye can not discern one from the other. Nay only a shimmering haze is apparent before the pointed screech of pain is elicited from her opponent. She does not dispatch quickly preferring to bleed her antagonist slowly and seems to draw strength from the subtle agonizing decline in strength that follows each surgical cut. Doom by a thousand cuts has never been more real in the Grand Arena than when the Queen performs her ritual dance.",
       "img": "QueenOfDamned",
       "loyalty": "3",
       "level": "6",
@@ -517,7 +517,7 @@
     },
     "the grey prince": {
       "name": "The Grey Prince",
-      "description": "It was rumored that Lucifer before his disappearance was protected by a secret society of those Anointed of Ash. The reference escapes definition even after a thorough examination of primary resources in the Infernal Archives. The appearance of a so called “Grey” Prince in the Grand Arena has fueled more speculation along these lines. I have place agents in positions of importance and more information is expected. -- Private letter from House Master Oculus to Asmodeus",
+      "description": "It was rumored that Lucifer before his disappearance was protected by a secret society of those Anointed of Ash. The reference escapes definition even after a thorough examination of primary resources in the Infernal Archives. The appearance of a so called “Grey” Prince in the Grand Arena has fueled more speculation along these lines. I have place agents in positions of importance and more information is expected.",
       "img": "GreyPrince",
       "loyalty": "7",
       "level": "3",
@@ -532,7 +532,7 @@
     },
     "the balrag of the pit": {
       "name": "The Balrag of the Pit",
-      "description": "The Lord of Shadows is truly a magnificent champion to behold. I have seen him fight a dozen opponents simultaneously and not seem to lack in vigor or martial grace. One almost suspects that it is a form of ritualistic self annihilation to proffer a challenge to such an opponent. And yet if that is not the case then like moths to a flame they come on with naïve expectations that anything short of torment in the Abyss awaits them - From 'An Account of Philotormentius at the Grand Arena' vol. iv",
+      "description": "The Lord of Shadows is truly a magnificent champion to behold. I have seen him fight a dozen opponents simultaneously and not seem to lack in vigor or martial grace. One almost suspects that it is a form of ritualistic self annihilation to proffer a challenge to such an opponent. And yet if that is not the case then like moths to a flame they come on with naïve expectations that anything short of torment in the Abyss awaits them.",
       "img": "Balrag",
       "loyalty": "3",
       "level": "8",
