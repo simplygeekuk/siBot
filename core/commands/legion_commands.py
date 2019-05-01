@@ -50,7 +50,8 @@ class Legion_commands(commands.Cog):
                            f' or {cf.inline("legion info")}'
                            f' to get information about Legions.')
 
-    @legion.command(name="list", case_insensitive=True)
+    @legion.command(name="list",
+                    case_insensitive=True)
     async def legion_list(self, ctx):
         '''List available Legions'''
         await ctx.send(f'You can learn more about the following Legions:'
@@ -59,7 +60,8 @@ class Legion_commands(commands.Cog):
                        f' {cf.inline("legion info <name>")} command'
                        f' to get information about a specific Legion.')
 
-    @legion.command(name="info", case_insensitive=True)
+    @legion.command(name="info",
+                    case_insensitive=True)
     async def legion_info(self, ctx, *, subcommand=None):
         '''Get information about a specific Legion.'''
         if subcommand is None:
@@ -81,26 +83,28 @@ class Legion_commands(commands.Cog):
                 await ctx.send(f'\'{subcommand}\''
                                f' is not a valid Legion name.')
 
-    @legion.command(name="special_abilities", case_insensitive=True)
+    @legion.command(name="special_abilities",
+                    case_insensitive=True)
     async def legion_special_abilities(self, ctx):
         '''Get information on Legion special abilities.'''
         item = " ".join(ctx.subcommand_passed.lower().split('_'))
         embed = self._create_info_embed(item,
-                                        f'{self._info[item]}'
+                                        f'{self._info[item]["description"]}'
                                         f'\n\nLegions have the following special abilities:'  # noqa: line-too-long
                                         f' {cf.inline(", ".join(self._legion_specials))}')  # noqa: line-too-long
         await ctx.send(embed=embed)
         await ctx.send(f'Use the'
                        f'{cf.inline("special_abilities <special ability>")}'
-                       f' command to get info for a specific'
+                       f' command to get information on a specific'
                        f' special ability.'
                        f'\n\nUse the'
                        f' {cf.inline("legion hasspecial <special ability>")}'
                        f' command to list Legions that have that'
                        f' special ability.')
 
-    @legion.command(name="level", case_insensitive=True)
-    async def legion_level(self, ctx, *, subcommand=None):
+    @legion.command(name="level",
+                    case_insensitive=True)
+    async def legion_level(self, ctx, subcommand=None):
         '''Get information on level and leveling up a Legion.'''
         item = ctx.subcommand_passed.lower()
         if subcommand is None:
@@ -112,31 +116,58 @@ class Legion_commands(commands.Cog):
                                             self._info[item]['up'])
             await ctx.send(embed=embed)
 
-    @legion.command(name="training", case_insensitive=True)
+    @legion.command(name="loyalty",
+                    case_insensitive=True)
+    async def legion_loyalty(self, ctx):
+        '''Get information on Legion loyalty.'''
+        item = ctx.subcommand_passed.lower()
+        embed = self._create_info_embed(item,
+                                        self._info[item]['description'])
+        await ctx.send(embed=embed)
+
+    @legion.command(name="movement",
+                    case_insensitive=True)
+    async def legion_movement(self, ctx, subcommand=None):
+        '''Get information on Legion movement.'''
+        item = ctx.subcommand_passed.lower()
+        if subcommand is None:
+            embed = self._create_info_embed(item,
+                                            self._info[item]['description'])
+            await ctx.send(embed=embed)
+        elif subcommand.lower() == 'rules':
+            embed = self._create_info_embed(item + " rules",
+                                            self._info[item]['rules'])
+            await ctx.send(embed=embed)
+
+    @legion.command(name="attachments",
+                    case_insensitive=True)
+    async def legion_attachments(self, ctx):
+        '''Get information on Legion attachments.'''
+        item = ctx.subcommand_passed.lower()
+        embed = self._create_info_embed(item,
+                                        self._info[item]['description'])
+        await ctx.send(embed=embed)
+
+    @legion.command(name="upkeep",
+                    case_insensitive=True)
+    async def legion_upkeep(self, ctx):
+        '''Get information on Legion upkeep.'''
+        item = ctx.subcommand_passed.lower()
+        embed = self._create_info_embed(item,
+                                        self._info[item]['description'])
+        await ctx.send(embed=embed)
+
+    @legion.command(name="training",
+                    case_insensitive=True)
     async def legion_training(self, ctx):
-        '''Get information on training a Legion.'''
+        '''Get information on Legion training.'''
         item = ctx.subcommand_passed.lower()
         embed = self._create_info_embed(item,
-                                        self._info[item])
+                                        self._info[item]['description'])
         await ctx.send(embed=embed)
 
-    @legion.command(name="limitations", case_insensitive=True)
-    async def legion_limitations(self, ctx):
-        '''Get information on Legion limitations.'''
-        item = ctx.subcommand_passed.lower()
-        embed = self._create_info_embed(item,
-                                        self._info[item])
-        await ctx.send(embed=embed)
-
-    @legion.command(name="luck", case_insensitive=True)
-    async def legion_luck(self, ctx):
-        '''Get information on Legion luck.'''
-        item = ctx.subcommand_passed.lower()
-        embed = self._create_info_embed(item,
-                                        self._info[item])
-        await ctx.send(embed=embed)
-
-    @legion.command(name="hasspecial", case_insensitive=True)
+    @legion.command(name="hasspecial",
+                    case_insensitive=True)
     async def legion_hasspecial(self, ctx, *, subcommand=None):
         '''Lists Legions that have the specified special ability.'''
         if subcommand is None:
