@@ -161,8 +161,8 @@ class Praetor_commands(commands.Cog):
                 await ctx.send(f'\'{subcommand}\''
                                f' is not a valid Praetor exotic combat move.')
 
-    @praetor.command(name="levelup", case_insensitive=True)
-    async def praetor_levelup(self, ctx):
+    @praetor.command(name="level", case_insensitive=True)
+    async def praetor_level(self, ctx):
         '''Get information on leveling up a Praetor.'''
         item = ctx.subcommand_passed.lower()
         embed = self._create_info_embed(item,

@@ -4,19 +4,25 @@ import os
 import sys
 import traceback
 from core.settings import Settings
+from os import listdir
+from os.path import isfile, join
+
 
 # Set some useful directories.
-base_dir = os.path.dirname(os.path.realpath(__file__))
+cogs_dir = 'core/commands/'
+current_path = os.path.dirname(os.path.realpath(__file__))
+cogs_path = os.path.join(current_path, cogs_dir)
 
 # Get all the settings.
 bot_settings = Settings()
 bot_default_settings = bot_settings.default
 bot_discord_settings = bot_settings.discord
-initial_extensions = bot_default_settings['extensions']
+# initial_extensions = bot_default_settings['extensions']
 valid_channels = bot_discord_settings['bot_valid_channels']
 bot_description = bot_discord_settings['bot_description']
 bot_token = bot_discord_settings['bot_token']
 bot_reconnect = bot_discord_settings['bot_reconnect']
+disabled_extensions = ['']
 
 
 async def get_prefix(bot, message):
@@ -36,17 +42,25 @@ async def get_prefix(bot, message):
     return commands.when_mentioned_or(*prefixes)(bot, message)
 
 
-def load_extensions(bot, extensions):
-    '''Load our extensions(cogs) listed above in [initial_extensions]'''
-    print("Bot is starting...")
-    print("Loading extensions...")
-    for extension in extensions:
-        try:
-            bot.load_extension(extension)
-            print(f"\t'{extension}' loaded successfully.")
-        except Exception:
-            print(f'\tFailed to load extension {extension}.', file=sys.stderr)
-            traceback.print_exc()  # print traceback without halting.
+def load_extensions(bot):
+    '''Load our extensions(cogs) from the commands directory'''
+    print("\nLoading extensions...")
+    extensions = [ext.split('.')[0] for ext in listdir(cogs_path)
+                  if isfile(join(cogs_path, ext))
+                  and ext != '__init__.py'
+                  and ext.split('.')[0] not in disabled_extensions]
+    cogs_dotted_path = cogs_dir.replace('/', '.')
+    if extensions:
+        for extension in extensions:
+            try:
+                bot.load_extension(cogs_dotted_path + extension)
+                print(f"\t'{extension}' loaded successfully.")
+            except Exception:
+                print(f'\tFailed to load extension {extension}.',
+                      file=sys.stderr)
+                traceback.print_exc()  # print traceback without halting.
+    else:
+        print(f'\tNo extensions found.')
 
 
 def setup_bot(description):
@@ -58,7 +72,8 @@ def setup_bot(description):
 bot = setup_bot(bot_description)
 
 if __name__ == '__main__':
-    load_extensions(bot, initial_extensions)
+    print("Bot is starting...")
+    load_extensions(bot)
 
 
 @bot.check
